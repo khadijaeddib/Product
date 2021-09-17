@@ -111,3 +111,52 @@
     }
 }
 
+.contact-expert-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 203px;
+
+    h3 {
+        margin-bottom: 16px;
+    }
+
+    .center-para {
+        width: 60%;
+        margin: 0 auto;
+    }
+
+    .expert-roles {
+        display: grid;
+        grid-template-columns: repeat(2 ,1fr);
+        column-gap: 180px;
+        // grid-template-rows: 24px;
+    
+        .expert-role {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+        }
+    
+        .right {
+            flex-direction: row-reverse;
+            text-align: right;
+        }
+
+        .message {
+            position: relative;
+
+            & p {
+                position: absolute;
+                top: 50%;
+                left: -35%;
+                transform: translate(50%,-50%);
+            }
+        }
+    }
+    .center {
+        margin-top: 48px;
+    }
+}
+
