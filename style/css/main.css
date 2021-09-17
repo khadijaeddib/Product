@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.main-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  height: 80px;
+}
+
+.main-header-logo a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  gap: 16px;
+}
+
+.main-header-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  gap: 24px;
+}
+
+.main-header-nav .active, .main-header-nav a:hover {
+  font-weight: 600;
+}
+
+body {
+  font-family: 'Poppins',sans-serif;
+}
+
+.container {
+  width: 79%;
+  margin: 0 auto;
+}
+
+h1 {
+  color: #22343D;
+  font-weight: 700;
+  font-size: 30px;
+}
+
+h2 {
+  color: #22343D;
+  font-weight: 700;
+  font-size: 40px;
+}
+
+h3 {
+  color: #22343D;
+  font-weight: 700;
+  font-size: 32px;
+}
+
+p {
+  color: #22343D;
+  font-weight: 400;
+  font-size: 18px;
+}
+
+a {
+  text-decoration: none;
+  color: #22343D;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.button {
+  padding: 10px 25px;
+  border-radius: 5px;
+  border: 1px solid #BCD0E5;
+  background-color: #02897A;
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.button.signin-btn {
+  background-color: #fff;
+  color: #173A56;
+}
+
+.button.signin-btn:hover {
+  background-color: #e0dfdf;
+  font-weight: 700;
+}
+
+.button:hover {
+  background-color: #046e62;
+  font-weight: 700;
+}
+
+.switcher {
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+}
+/*# sourceMappingURL=main.css.map */

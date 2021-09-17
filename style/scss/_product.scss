@@ -1,0 +1,31 @@
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    height: 80px;
+
+    &-logo a {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-items: center;
+        text-align: center;
+        gap: 16px;
+    }
+
+    &-nav {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+        gap: 24px;
+
+        .active, a:hover {
+            font-weight: map-get($font-weights, semi-bold);
+        }
+    }
+
+}

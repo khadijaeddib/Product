@@ -1,0 +1,16 @@
+$primary-color: #02897A;
+$dark-color:#22343D;
+$light-color:#BCD0E5;
+$white:#fff;
+$font-weights: (
+    "regular":400,
+    "medium":500,
+    "semi-bold":600,
+    "bold":700
+);
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}

@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+@import "variables";
+@import "product";
+
+
+
+body {
+    font-family: 'Poppins',sans-serif;
+}
+.container {
+    width: 79%;
+    margin: 0 auto;
+}
+h1 {
+    color: $dark-color;
+    font-weight: map-get($font-weights, bold);
+    font-size: 30px;
+}
+h2 {
+    color: $dark-color;
+    font-weight: map-get($font-weights, bold);
+    font-size: 40px;
+}
+h3 {
+    color: $dark-color;
+    font-weight: map-get($font-weights, bold);
+    font-size: 32px;
+}
+p {
+    color: $dark-color;
+    font-weight: map-get($font-weights, regular);
+    font-size: 18px;
+}
+a {
+    text-decoration: none;
+    color: $dark-color;
+    font-weight: map-get($font-weights, regular);
+    font-size: 16px;
+}
+.button {
+    padding: 10px 25px;
+    border-radius: 5px;
+    border: 1px solid $light-color;
+    background-color: $primary-color;
+    color: $white;
+    font-weight: map-get($font-weights, semi-bold);
+    cursor: pointer;
+
+    &.signin-btn {
+        background-color: $white;
+        color: #173A56;
+
+        &:hover {
+            background-color: rgb(224, 223, 223);
+            font-weight: map-get($font-weights, bold);
+        }
+    }
+
+    &:hover {
+        background-color: #046e62;
+        font-weight: map-get($font-weights, bold);
+    }
+}
+
+.switcher {
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+}
