@@ -28,6 +28,10 @@ h3 {
     font-weight: map-get($font-weights, bold);
     font-size: 32px;
     margin-bottom: 23px;
+    text-align: center;
+    width: 45%;
+    margin: 0 auto;
+    margin-bottom: 66px;
 }
 h4 {
     color: $dark-color;
@@ -73,7 +77,6 @@ a {
         font-weight: map-get($font-weights, bold);
     }
 }
-
 .switcher {
     border: none;
     border-radius: 50%;

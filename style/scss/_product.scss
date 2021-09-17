@@ -6,14 +6,13 @@
     align-items: center;
     text-align: center;
     height: 80px;
-    position: fixed;
-    z-index: 1;
+    position: sticky;
+    top: 0;
     box-shadow: 0 1px 4px 0 rgba(0,0,0,.1);
 
     &-bar {
         width: 78%;
         margin: 0 auto;
-        height: 80px;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -45,13 +44,11 @@
 }
 
 .hero-section {
-    position: relative;
     display: flex;
     justify-content: space-between;
     align-items: center;
     text-align: center;
-    top: 105px;
-    // padding-top: 105px;
+    padding-top: 25px;
     
     &-btns {
         display: flex;
@@ -75,3 +72,20 @@
         }
     }
 }
+
+.main-presentation {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 114px;
+
+    &-items {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 46px;
+    }
+
+}
+
