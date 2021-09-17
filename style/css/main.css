@@ -7,6 +7,8 @@
 }
 
 .main-header {
+  width: 100%;
+  background-color: #fff;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -18,6 +20,26 @@
           align-items: center;
   text-align: center;
   height: 80px;
+  position: fixed;
+  z-index: 1;
+  -webkit-box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.1);
+          box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.1);
+}
+
+.main-header-bar {
+  width: 78%;
+  margin: 0 auto;
+  height: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
 }
 
 .main-header-logo a {
@@ -61,12 +83,57 @@
   font-weight: 600;
 }
 
+.hero-section {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  top: 105px;
+}
+
+.hero-section-btns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: left;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 30px;
+}
+
+.hero-section-btns .play-btn {
+  background-color: #fff;
+  color: #02897A;
+  text-decoration: underline;
+  border: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 8px;
+}
+
+.hero-section-btns .play-btn:hover {
+  background-color: #F5F5F5;
+  font-weight: 700;
+}
+
 body {
   font-family: 'Poppins',sans-serif;
 }
 
 .container {
-  width: 79%;
+  width: 78%;
   margin: 0 auto;
 }
 
@@ -80,18 +147,30 @@ h2 {
   color: #22343D;
   font-weight: 700;
   font-size: 40px;
+  text-align: left;
+  margin-bottom: 18px;
 }
 
 h3 {
   color: #22343D;
   font-weight: 700;
   font-size: 32px;
+  margin-bottom: 23px;
+}
+
+h4 {
+  color: #22343D;
+  font-weight: 600;
+  font-size: 22px;
+  margin-bottom: 13px;
 }
 
 p {
   color: #22343D;
   font-weight: 400;
   font-size: 18px;
+  text-align: left;
+  margin-bottom: 30px;
 }
 
 a {
@@ -108,6 +187,7 @@ a {
   background-color: #02897A;
   color: #fff;
   font-weight: 600;
+  font-size: 16px;
   cursor: pointer;
 }
 
@@ -117,7 +197,7 @@ a {
 }
 
 .button.signin-btn:hover {
-  background-color: #e0dfdf;
+  background-color: #F5F5F5;
   font-weight: 700;
 }
 

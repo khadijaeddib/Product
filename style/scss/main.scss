@@ -8,7 +8,7 @@ body {
     font-family: 'Poppins',sans-serif;
 }
 .container {
-    width: 79%;
+    width: 78%;
     margin: 0 auto;
 }
 h1 {
@@ -20,16 +20,27 @@ h2 {
     color: $dark-color;
     font-weight: map-get($font-weights, bold);
     font-size: 40px;
+    text-align: left;
+    margin-bottom: 18px;
 }
 h3 {
     color: $dark-color;
     font-weight: map-get($font-weights, bold);
     font-size: 32px;
+    margin-bottom: 23px;
+}
+h4 {
+    color: $dark-color;
+    font-weight: map-get($font-weights, semi-bold);
+    font-size: 22px;
+    margin-bottom: 13px;
 }
 p {
     color: $dark-color;
     font-weight: map-get($font-weights, regular);
     font-size: 18px;
+    text-align: left;
+    margin-bottom: 30px;
 }
 a {
     text-decoration: none;
@@ -44,6 +55,7 @@ a {
     background-color: $primary-color;
     color: $white;
     font-weight: map-get($font-weights, semi-bold);
+    font-size: 16px;
     cursor: pointer;
 
     &.signin-btn {
@@ -51,7 +63,7 @@ a {
         color: #173A56;
 
         &:hover {
-            background-color: rgb(224, 223, 223);
+            background-color: $hover-color;
             font-weight: map-get($font-weights, bold);
         }
     }

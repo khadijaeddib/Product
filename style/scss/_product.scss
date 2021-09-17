@@ -1,9 +1,24 @@
 .main-header {
+    width: 100%;
+    background-color: $white;
     display: flex;
     justify-content: space-between;
     align-items: center;
     text-align: center;
     height: 80px;
+    position: fixed;
+    z-index: 1;
+    box-shadow: 0 1px 4px 0 rgba(0,0,0,.1);
+
+    &-bar {
+        width: 78%;
+        margin: 0 auto;
+        height: 80px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+    }
 
     &-logo a {
         display: flex;
@@ -27,5 +42,36 @@
             font-weight: map-get($font-weights, semi-bold);
         }
     }
+}
 
+.hero-section {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    top: 105px;
+    // padding-top: 105px;
+    
+    &-btns {
+        display: flex;
+        text-align: left;
+        align-items: center;
+        gap: 30px;
+
+        .play-btn {
+            background-color: $white;
+            color: $primary-color;
+            text-decoration: underline;
+            border: none;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+
+            &:hover {
+                background-color: $hover-color;
+                font-weight: map-get($font-weights, bold);
+            }    
+        }
+    }
 }
