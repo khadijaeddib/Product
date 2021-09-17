@@ -6,6 +6,8 @@
 
 body {
     font-family: 'Poppins',sans-serif;
+    background: 50% 850px url(../../images/backgrounds/Bg.svg)no-repeat;
+    background-size: contain;
 }
 .container {
     width: 78%;
@@ -32,11 +34,18 @@ h3 {
     width: 45%;
     margin: 0 auto;
     margin-bottom: 66px;
+    text-align: left;
 }
 h4 {
     color: $dark-color;
     font-weight: map-get($font-weights, semi-bold);
     font-size: 22px;
+    margin-bottom: 13px;
+}
+h5 {
+    color: $dark-color;
+    font-weight: map-get($font-weights, semi-bold);
+    font-size: 16px;
     margin-bottom: 13px;
 }
 p {
