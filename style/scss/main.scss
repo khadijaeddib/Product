@@ -47,6 +47,13 @@ h5 {
     font-size: 16px;
     margin-bottom: 13px;
 }
+h6 {
+    color: $dark-color;
+    font-weight: map-get($font-weights, bold);
+    font-size: 24px;
+    margin-bottom: 8px;
+    text-align: center;
+}
 p {
     color: $dark-color;
     font-weight: map-get($font-weights, regular);

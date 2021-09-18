@@ -1,0 +1,35 @@
+[
+    {
+        "id": 1,
+        "name": "Free",
+        "description": "Brief price description",
+        "price": "0",
+        "features": [
+          "Only 2 Operators",
+          "Notifications",
+          "Landing Pages"
+        ]
+    },
+    {
+        "id": 2,
+        "name": "Standard",
+        "description": "Brief price description",
+        "price": "5",
+        "features": [
+          "5+ Operators",
+          "Notifications",
+          "Landing Pages"
+        ]
+    },
+    {
+        "id": 3,
+        "name": "Premium",
+        "description": "Brief price description",
+        "price": "10",
+        "features": [
+          "10+ Operators",
+          "Notifications",
+          "Landing Pages"
+        ]
+    }
+]

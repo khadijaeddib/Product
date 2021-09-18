@@ -327,6 +327,102 @@
   background-color: #02897A;
 }
 
+.price-table {
+  padding-top: 150px;
+}
+
+.price-table h2 {
+  font-size: 34px;
+  text-align: center;
+}
+
+.price-table p {
+  font-weight: 500;
+  text-align: center;
+}
+
+.price-table-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 70px;
+}
+
+.price-table-column {
+  border: 1px solid #FFFFFF;
+  -webkit-box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.1);
+          box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.1);
+  padding: 32px 73px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.price-table-column h4 {
+  font-size: 24px;
+}
+
+.price-table-column p {
+  text-align: left;
+  margin-bottom: 16px;
+}
+
+.price-table-column h2 {
+  font-size: 76px;
+  text-align: left;
+  color: #02897A;
+  margin-bottom: 0px;
+}
+
+.price-table-column h4 {
+  color: #02897A;
+  font-weight: 700;
+  font-size: 24px;
+  margin-bottom: 4px;
+}
+
+.price-table-column h5 {
+  color: #AFAFAF;
+  font-weight: 400;
+}
+
+.price-table-column .price-value {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.price-table-column .button {
+  margin-top: 20px;
+}
+
+.price-table-column .center {
+  text-align: center;
+}
+
+.price-table .standard {
+  background-color: #02897A;
+}
+
+.price-table .standard h2, .price-table .standard h4, .price-table .standard h6, .price-table .standard p {
+  color: #fff;
+}
+
+.price-table .standard .button {
+  background-color: #fff;
+  color: #02897A;
+}
+
 body {
   font-family: 'Poppins',sans-serif;
   background: 50% 850px url(../../images/backgrounds/Bg.svg) no-repeat, 0% 3200px url(../../images/backgrounds/Bg-2.svg) no-repeat;
@@ -375,6 +471,14 @@ h5 {
   font-weight: 600;
   font-size: 16px;
   margin-bottom: 13px;
+}
+
+h6 {
+  color: #22343D;
+  font-weight: 700;
+  font-size: 24px;
+  margin-bottom: 8px;
+  text-align: center;
 }
 
 p {
