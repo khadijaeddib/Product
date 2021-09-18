@@ -48,6 +48,7 @@
     justify-content: space-between;
     align-items: center;
     text-align: center;
+    gap: 56px;
     padding-top: 25px;
     
     &-btns {
@@ -88,7 +89,7 @@
     }
 }
 
-.flex {
+.flex-sections {
     padding-top: 150px;
     display: flex;
     gap: 84px;
@@ -101,9 +102,6 @@
         display: flex;
         gap: 30px;
         align-items: center;
-        justify-content: center;
-        justify-items: center;
-        align-content: center;
 
         .check-icons-margin {
             margin-bottom: 30px;
@@ -131,7 +129,6 @@
         display: grid;
         grid-template-columns: repeat(2 ,1fr);
         column-gap: 180px;
-        // grid-template-rows: 24px;
     
         .expert-role {
             display: flex;
@@ -157,6 +154,76 @@
     }
     .center {
         margin-top: 48px;
+    }
+}
+
+.blogs-section {
+    padding-top: 150px;
+
+    h2 {
+        font-size: 34px;
+        margin-bottom: 8px;
+    }
+
+    h4 {
+        font-weight: map-get($font-weights, bold);
+        font-size: 24px;
+    }
+    p {
+        margin-bottom: 12px;
+    }
+
+    .blogs-section-items {
+        padding-top: 20px;
+        display: flex;
+        gap: 32px;
+
+        .blogs-section-item{
+            border: 1px solid #DEDEDE;
+            border-radius: 9px;
+            max-width: 31%;
+
+            img {
+                width: 100%;
+            }
+
+            &-content {
+                padding: 24px;
+
+                & .p-bold {
+                    font-weight: map-get($font-weights, bold);
+                }
+            }
+
+            .active, & :hover{
+                color: $primary-color;
+            }
+            
+        }
+    }
+
+    .blogs-slides {
+        list-style: none;
+        text-align: center;
+        font-size: 60px;
+        color: #EFEFEF;
+    
+        li{
+            display: inline-block;
+        }
+        button{
+            border: 1px solid #EFEFEF;
+            display: inline-block;
+            width: 16px;
+            height: 16px;
+            border-radius: 7px;
+            margin: 0 10px;
+            cursor: pointer;
+        }
+        .active, & button:hover{
+            background-color: $primary-color;
+        }
+
     }
 }
 

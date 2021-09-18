@@ -3,10 +3,10 @@
 @import "product";
 
 
-
 body {
     font-family: 'Poppins',sans-serif;
-    background: 50% 850px url(../../images/backgrounds/Bg.svg)no-repeat;
+    background: 50% 850px url(../../images/backgrounds/Bg.svg)no-repeat,
+                0% 3200px url(../../images/backgrounds/Bg-2.svg)no-repeat;
     background-size: contain;
 }
 .container {
@@ -34,7 +34,6 @@ h3 {
     width: 45%;
     margin: 0 auto;
     margin-bottom: 66px;
-    text-align: left;
 }
 h4 {
     color: $dark-color;
