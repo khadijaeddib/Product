@@ -1,0 +1,135 @@
+@include media-xl {
+    body {
+        background: 50% 550px url(../../images/backgrounds/Bg.svg)no-repeat,
+                    0% 3250px url(../../images/backgrounds/Bg-2.svg)no-repeat!important;
+        background-size: contain!important;
+    }
+    .flex-sections {
+        gap: 300px;
+    }
+}
+
+@include media-lg {
+    body {
+        background: 50% 900px url(../../images/backgrounds/Bg.svg)no-repeat,
+                    0% 3400px url(../../images/backgrounds/Bg-2.svg)no-repeat!important;
+        background-size: contain!important;
+    }
+}
+
+@include media-md {
+    body {
+        width: 100%;
+        overflow: auto;
+        background: 0% 3210px url(../../images/backgrounds/Bg-2.svg)no-repeat!important;
+        background-size: contain!important;
+    }
+    .main-header-bar {
+        width: 90%!important;
+    }
+    .container {
+        width: 90%!important;
+    }
+    .footer-container {
+        width: 90%!important;
+    }
+    .col1 {
+        padding-right: 0!important;
+    }
+    .col2 {
+        padding-right: 0!important;
+    }
+    img[alt="hero illustration"],
+    img[alt="management"],
+    img[alt="support"],
+    img[alt="collaborative"],
+    img[alt="boost business"] {
+        width: 40vw;
+    }
+
+    .call-to-action {
+        gap: 60px
+    }
+    .footer-item {
+        max-width: 270px!important;
+    }
+    // img[alt="first expert"],
+    // img[alt="second expert"],
+    // img[alt="third expert"],
+    // img[alt="fourth expert"] {
+    //     width: 60px!important;
+    //     height: 60px!important;
+    // }
+}
+@include media-mobile-xl {
+    .main-header-nav {
+        visibility: hidden;
+    }
+
+    .main-header-nav-btn {
+        border: none;
+        position: absolute;
+        right: 35px;
+        top: 35px;
+        width: 23px;
+        height: 3px;
+        background: $dark-color;
+        &::before {
+            content: '';
+            position: absolute;
+            right: 0.5px;
+            top: -8px;
+            width: 23px;
+            height: 3px;
+            background: $dark-color;
+        }
+        &::after {
+            content: '';
+            position: absolute;
+            right: 0.5px;
+            top: 8px;
+            width: 23px;
+            height: 3px;
+            background: $dark-color;
+        }
+    }
+
+    .open-menu{
+        visibility: visible!important;
+        width: 100%;
+        background-color: $white;
+
+        &-items {
+            height: 75vh;
+            display: flex;
+            flex-direction: column;
+            align-items:center;
+            justify-content:center;
+            gap: 30px;
+            transform: translateY(0);
+
+            .active, a:hover {
+                font-weight: map-get($font-weights, semi-bold);
+            }
+
+        }
+    }
+    .hero-section,
+    .main-presentation,
+    .main-presentation-items,
+    .flex-sections,
+    .blogs-section-items,
+    .price-table-row,
+    .review-section-items,
+    .call-to-action,
+    .footer-items {
+        flex-direction: column;
+        align-items: center!important;
+        justify-content: center!important;
+    }
+    .expert-roles {
+        grid-template-columns: repeat(1 ,1fr)!important;
+        align-items: center!important;
+        justify-content: center!important;
+    }
+}

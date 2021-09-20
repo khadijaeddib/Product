@@ -2,12 +2,13 @@
 @import "variables";
 @import "product";
 @import "animations";
+@import "responsive";
 
 
 body {
     font-family: 'Poppins',sans-serif;
     background: 50% 850px url(../../images/backgrounds/Bg.svg)no-repeat,
-                0% 3200px url(../../images/backgrounds/Bg-2.svg)no-repeat;
+                0% 3320px url(../../images/backgrounds/Bg-2.svg)no-repeat;
     background-size: contain;
     scroll-behavior: smooth;
 }
@@ -110,4 +111,7 @@ a {
     border: none;
     border-radius: 50%;
     cursor: pointer;
+}
+.collapse-nav {
+    visibility: hidden;
 }

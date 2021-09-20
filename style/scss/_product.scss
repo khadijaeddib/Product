@@ -2,7 +2,7 @@
     width: 100%;
     background-color: $white;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     text-align: center;
     height: 80px;
@@ -15,7 +15,7 @@
         width: 78%;
         margin: 0 auto;
         display: flex;
-        justify-content: space-between;
+        justify-content:space-between;
         align-items: center;
         text-align: center;
     }
@@ -84,7 +84,7 @@
 
     &-items {
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
         align-items: center;
         gap: 46px;
     }
@@ -114,15 +114,17 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 32px;
     padding-top: 50px;
 
     h3 {
-        margin-bottom: 16px;
+        margin-bottom: 0px;
     }
 
     .center-para {
         width: 60%;
         margin: 0 auto;
+        text-align: center;
     }
 
     .expert-roles {
@@ -146,9 +148,8 @@
 
             & p {
                 position: absolute;
-                top: 50%;
-                left: -35%;
-                transform: translate(50%,-50%);
+                top: 40%;
+                transform: translate(3%,-50%);
             }
         }
     }
@@ -174,6 +175,7 @@
     .blogs-section-items {
         padding-top: 20px;
         display: flex;
+        justify-content: center;
         gap: 32px;
 
         .blogs-section-item{
@@ -241,6 +243,8 @@
 
     &-row {
         display: flex;
+        align-items: center;
+        justify-content: center;
         gap: 70px;
     }
     &-column {
@@ -396,6 +400,7 @@
 
 footer {
     .footer-items {
+        width: 100%;
         display: flex;
         align-items: flex-start;
         justify-content: space-between;
