@@ -9,6 +9,7 @@
     position: sticky;
     top: 0;
     box-shadow: 0 1px 4px 0 rgba(0,0,0,.1);
+    z-index: 1;
 
     &-bar {
         width: 78%;
@@ -79,7 +80,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-top: 114px;
+    padding-bottom: 100px;
 
     &-items {
         display: flex;
@@ -90,7 +91,6 @@
 }
 
 .flex-sections {
-    padding-top: 150px;
     display: flex;
     gap: 84px;
 
@@ -114,7 +114,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-top: 203px;
+    padding-top: 50px;
 
     h3 {
         margin-bottom: 16px;
@@ -158,8 +158,6 @@
 }
 
 .blogs-section {
-    padding-top: 150px;
-
     h2 {
         font-size: 34px;
         margin-bottom: 8px;
@@ -228,8 +226,6 @@
 }
 
 .price-table {
-    padding-top: 150px;
-
     h2 {
         font-size: 34px;
         text-align: center;
@@ -242,12 +238,11 @@
     &-row {
         display: flex;
         gap: 70px;
-        
-
     }
     &-column {
         border: 1px solid #FFFFFF;
         box-shadow: 0 1px 4px 0 rgba(0,0,0,.1);
+        border-radius: 8px;
         padding: 32px 73px;
         display: flex;
         flex-direction: column;
@@ -300,4 +295,60 @@
     }
 }
 
+.review-section {
+    h2 {
+        font-size: 34px;
+        text-align: center;
+    }
+    & p {
+        font-weight: map-get($font-weights, medium);
+        text-align: center;
+        margin-bottom: 0;
+    }
+    &-items {
+        padding-top: 50px;
+        display: flex;
+        gap: 64px;
+    }
+    &-item {
+        border: 1px solid #FFFFFF;
+        box-shadow: 0 1px 4px 0 rgba(0,0,0,.1);
+        padding: 26px;
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        align-items:flex-start;
 
+        & p{
+            font-weight: map-get($font-weights, regular);
+            color:#737373;
+            text-align: justify;
+        }
+
+        .reviewer {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+
+            img {
+                width: 50px;
+                height: 50px;
+            }
+
+            &-information {
+                & p {
+                    margin-bottom: 0;
+                }
+
+                .reviewer-name {
+                    font-weight: map-get($font-weights, semi-bold);
+                    color: $primary-color;
+                }
+                .reviewer-job {
+                    font-size: 14px;
+                    font-weight: map-get($font-weights, medium);
+                }
+            }
+        }
+    }
+}

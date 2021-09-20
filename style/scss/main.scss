@@ -12,6 +12,9 @@ body {
 .container {
     width: 78%;
     margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 150px;
 }
 h1 {
     color: $dark-color;
@@ -97,3 +100,4 @@ a {
     border-radius: 50%;
     cursor: pointer;
 }
+
