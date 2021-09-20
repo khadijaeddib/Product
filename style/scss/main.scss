@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 @import "variables";
 @import "product";
+@import "animations";
 
 
 body {
@@ -8,6 +9,7 @@ body {
     background: 50% 850px url(../../images/backgrounds/Bg.svg)no-repeat,
                 0% 3200px url(../../images/backgrounds/Bg-2.svg)no-repeat;
     background-size: contain;
+    scroll-behavior: smooth;
 }
 .container {
     width: 78%;

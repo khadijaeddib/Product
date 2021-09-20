@@ -181,6 +181,10 @@
             border-radius: 9px;
             max-width: 31%;
 
+            &:hover  {
+                transform: translate3d(0, -15px, 0);
+            }
+
             img {
                 width: 100%;
             }
@@ -193,7 +197,7 @@
                 }
             }
 
-            .active, & :hover{
+            .active-title, & :hover{
                 color: $primary-color;
             }
             
@@ -218,7 +222,7 @@
             margin: 0 10px;
             cursor: pointer;
         }
-        .active, & button:hover{
+        .active-button, & button:hover{
             background-color: $primary-color;
         }
 
@@ -280,6 +284,10 @@
         }
         .center {
             text-align: center;
+        }
+
+        &:hover  {
+            transform: scale(1.1);
         }
     }
     .standard {
