@@ -352,3 +352,104 @@
         }
     }
 }
+
+.call-to-action {
+    width: 90%;
+    margin: 0 auto;
+    background-color: $primary-color;
+    display: flex;
+    gap: 100px;
+    border-radius: 32px;
+
+    h4 {
+        color: $white;
+        font-size: 32px;
+        margin-bottom: 60px;
+    }
+    &-content {
+        padding: 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+
+        .button {
+            background-color: $white;
+            color: $primary-color;
+            padding: 13px 35px;
+
+            &:hover {
+                font-size: 18px;
+                background-color: $white;
+                font-weight: map-get($font-weights, bold);
+            }
+        }
+    }
+}
+
+footer {
+    .footer-items {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        gap: 82px;
+
+        .col1 {
+            padding-right: 80px;
+        }
+
+        .col2 {
+            padding-right: 47px;
+        }
+    
+        .footer-item {
+            max-width: 325px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 8px;
+
+            a {
+                display: flex;
+                gap: 16px;
+            }
+
+            .footer-social-media {
+                display: flex;
+                gap: 16px;
+
+                img{
+                    background-color: #EDFFFC;
+                    border-radius: 50%;
+                    padding: 11px 9px;
+                }
+            }
+
+            h5 {
+                font-weight: map-get($font-weights, medium);
+                font-size: 20px;
+            }
+
+            .email-form {
+                display: flex;
+                flex-direction: column;
+                gap: 21px;
+                align-items: flex-start;
+
+                input[type=email]{
+                    width: 200%;
+                    height: 48px;
+                    border: 1px solid $light-color;
+                    box-shadow: 0 1px 4px 3px rgba(0,0,0,.1);
+                    margin-bottom: 13px;
+    
+                    &::placeholder {
+                        color:#737373;
+                        font-weight: map-get($font-weights, regular);
+                        font-size: 16px;
+                        padding: 10px;
+                    }
+                }
+            }
+        }
+    }
+}

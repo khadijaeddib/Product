@@ -16,6 +16,15 @@ body {
     flex-direction: column;
     gap: 150px;
 }
+.footer-container {
+    padding-top: 150px;
+    width: 78%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
 h1 {
     color: $dark-color;
     font-weight: map-get($font-weights, bold);
@@ -100,4 +109,3 @@ a {
     border-radius: 50%;
     cursor: pointer;
 }
-
