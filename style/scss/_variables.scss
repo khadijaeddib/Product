@@ -35,8 +35,20 @@ $font-weights: (
     }
 }
 
-@mixin media-mobile-xl {
+@mixin media-mobile-lg {
     @media screen and (max-width:425px){
+        @content;
+    }
+}
+
+@mixin media-mobile-md {
+    @media screen and (max-width:375px){
+        @content;
+    }
+}
+
+@mixin media-mobile-sm {
+    @media screen and (max-width:320px){
         @content;
     }
 }

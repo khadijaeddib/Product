@@ -53,15 +53,21 @@
     .footer-item {
         max-width: 270px!important;
     }
-    // img[alt="first expert"],
-    // img[alt="second expert"],
-    // img[alt="third expert"],
-    // img[alt="fourth expert"] {
-    //     width: 60px!important;
-    //     height: 60px!important;
-    // }
 }
-@include media-mobile-xl {
+
+@include media-mobile-lg {
+    html, body {
+        width: 100%;
+        overflow-x: hidden;
+    }
+    body {
+        background: 50% 1950px url(../../images/backgrounds/Bg.svg)no-repeat,
+                    0% 5150px url(../../images/backgrounds/Bg-2.svg)no-repeat!important;
+        background-size: contain!important;
+    }
+    .container {
+        gap: 100px!important;
+    }
     .main-header-nav {
         visibility: hidden;
     }
@@ -100,7 +106,7 @@
         background-color: $white;
 
         &-items {
-            height: 75vh;
+            height: 65vh;
             display: flex;
             flex-direction: column;
             align-items:center;
@@ -131,5 +137,136 @@
         grid-template-columns: repeat(1 ,1fr)!important;
         align-items: center!important;
         justify-content: center!important;
+    }
+    img[alt="hero illustration"],
+    img[alt="management"],
+    img[alt="support"],
+    img[alt="collaborative"],
+    img[alt="boost business"] {
+        width: 80vw;
+    }
+    .hero-section,
+    .flex-sections {
+        flex-direction: column-reverse;
+        &.middle {
+            flex-direction: column;
+        }
+    }
+    .main-presentation {
+        h3 {
+            width: 85%;
+        }
+        &-item {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            p {
+                text-align: center;
+                width: 70%;
+            }
+        }
+    }
+    .contact-expert-section {
+        h3 {
+            width: 95%;
+        }
+        .left-in-media {
+            flex-direction: row!important;
+        }
+        .right-in-media {
+            flex-direction: row-reverse!important;
+        }
+        img[alt="first expert"],
+        img[alt="second expert"],
+        img[alt="third expert"],
+        img[alt="fourth expert"] {
+            width: 70px!important;
+            height: 70px!important;
+        }
+    }
+    .blogs-section-items {
+        & .blogs-section-item {
+            max-width: 100%!important;
+            &-content h4 {
+                width: 85%!important;
+            }
+        }
+    }
+
+    .call-to-action {
+        gap: 32px;
+        &-content {
+           justify-content: center!important;
+           align-items: center;
+           h4 {
+                text-align: center;
+            }
+        }
+
+    }
+    footer {
+        .footer-items {
+            gap: 30px!important;
+            align-items: center!important;
+    
+            .footer-item {
+                align-items: center!important;
+                
+                & .email-form {
+                    align-items: center!important;
+                }
+            }
+        }
+        p {
+            text-align: center;
+        }
+    }
+}
+
+@include media-mobile-md {
+    body {
+        background: 50% 2070px url(../../images/backgrounds/Bg.svg)no-repeat,
+                    0% 5250px url(../../images/backgrounds/Bg-2.svg)no-repeat!important;
+        background-size: contain!important;
+    }
+}
+
+@include media-mobile-sm {
+    body {
+        background: 50% 2150px url(../../images/backgrounds/Bg.svg)no-repeat,
+                    0% 5300px url(../../images/backgrounds/Bg-2.svg)no-repeat!important;
+        background-size: contain!important;
+    }
+
+    .contact-expert-section {
+        h3 {
+            width: 90%;
+        }
+        .center-para {
+            width: 80%;
+        }
+        .expert-role {
+            gap: 10px!important;
+
+            img[alt="first expert"],
+            img[alt="second expert"],
+            img[alt="third expert"],
+            img[alt="fourth expert"] {
+                width: 50px!important;
+                height: 50px!important;
+            }
+
+            .message{
+                img{
+                    width: 95%;
+                }
+                p {
+                    text-align: center;
+                }
+            }
+        }
+        
     }
 }

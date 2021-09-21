@@ -40,7 +40,6 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  text-align: center;
 }
 
 .main-header-logo a {
@@ -843,6 +842,17 @@ footer .footer-items .footer-item .email-form input[type=email]::placeholder {
 }
 
 @media screen and (max-width: 425px) {
+  html, body {
+    width: 100%;
+    overflow-x: hidden;
+  }
+  body {
+    background: 50% 1950px url(../../images/backgrounds/Bg.svg) no-repeat, 0% 5150px url(../../images/backgrounds/Bg-2.svg) no-repeat !important;
+    background-size: contain !important;
+  }
+  .container {
+    gap: 100px !important;
+  }
   .main-header-nav {
     visibility: hidden;
   }
@@ -879,7 +889,7 @@ footer .footer-items .footer-item .email-form input[type=email]::placeholder {
     background-color: #fff;
   }
   .open-menu-items {
-    height: 75vh;
+    height: 65vh;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -929,6 +939,146 @@ footer .footer-items .footer-item .email-form input[type=email]::placeholder {
     -webkit-box-pack: center !important;
         -ms-flex-pack: center !important;
             justify-content: center !important;
+  }
+  img[alt="hero illustration"],
+  img[alt="management"],
+  img[alt="support"],
+  img[alt="collaborative"],
+  img[alt="boost business"] {
+    width: 80vw;
+  }
+  .hero-section,
+  .flex-sections {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .hero-section.middle,
+  .flex-sections.middle {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .main-presentation h3 {
+    width: 85%;
+  }
+  .main-presentation-item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .main-presentation-item p {
+    text-align: center;
+    width: 70%;
+  }
+  .contact-expert-section h3 {
+    width: 95%;
+  }
+  .contact-expert-section .left-in-media {
+    -webkit-box-orient: horizontal !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: row !important;
+            flex-direction: row !important;
+  }
+  .contact-expert-section .right-in-media {
+    -webkit-box-orient: horizontal !important;
+    -webkit-box-direction: reverse !important;
+        -ms-flex-direction: row-reverse !important;
+            flex-direction: row-reverse !important;
+  }
+  .contact-expert-section img[alt="first expert"],
+  .contact-expert-section img[alt="second expert"],
+  .contact-expert-section img[alt="third expert"],
+  .contact-expert-section img[alt="fourth expert"] {
+    width: 70px !important;
+    height: 70px !important;
+  }
+  .blogs-section-items .blogs-section-item {
+    max-width: 100% !important;
+  }
+  .blogs-section-items .blogs-section-item-content h4 {
+    width: 85% !important;
+  }
+  .call-to-action {
+    gap: 32px;
+  }
+  .call-to-action-content {
+    -webkit-box-pack: center !important;
+        -ms-flex-pack: center !important;
+            justify-content: center !important;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .call-to-action-content h4 {
+    text-align: center;
+  }
+  footer .footer-items {
+    gap: 30px !important;
+    -webkit-box-align: center !important;
+        -ms-flex-align: center !important;
+            align-items: center !important;
+  }
+  footer .footer-items .footer-item {
+    -webkit-box-align: center !important;
+        -ms-flex-align: center !important;
+            align-items: center !important;
+  }
+  footer .footer-items .footer-item .email-form {
+    -webkit-box-align: center !important;
+        -ms-flex-align: center !important;
+            align-items: center !important;
+  }
+  footer p {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  body {
+    background: 50% 2070px url(../../images/backgrounds/Bg.svg) no-repeat, 0% 5250px url(../../images/backgrounds/Bg-2.svg) no-repeat !important;
+    background-size: contain !important;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  body {
+    background: 50% 2150px url(../../images/backgrounds/Bg.svg) no-repeat, 0% 5300px url(../../images/backgrounds/Bg-2.svg) no-repeat !important;
+    background-size: contain !important;
+  }
+  .contact-expert-section h3 {
+    width: 90%;
+  }
+  .contact-expert-section .center-para {
+    width: 80%;
+  }
+  .contact-expert-section .expert-role {
+    gap: 10px !important;
+  }
+  .contact-expert-section .expert-role img[alt="first expert"],
+  .contact-expert-section .expert-role img[alt="second expert"],
+  .contact-expert-section .expert-role img[alt="third expert"],
+  .contact-expert-section .expert-role img[alt="fourth expert"] {
+    width: 50px !important;
+    height: 50px !important;
+  }
+  .contact-expert-section .expert-role .message img {
+    width: 95%;
+  }
+  .contact-expert-section .expert-role .message p {
+    text-align: center;
   }
 }
 
