@@ -68,58 +68,63 @@
     .container {
         gap: 100px!important;
     }
-    .main-header-nav {
-        visibility: hidden;
-    }
 
-    .main-header-nav-btn {
-        border: none;
-        position: absolute;
-        right: 35px;
-        top: 35px;
-        width: 23px;
-        height: 3px;
-        background: $dark-color;
-        &::before {
-            content: '';
-            position: absolute;
-            right: 0.5px;
-            top: -8px;
-            width: 23px;
-            height: 3px;
-            background: $dark-color;
-        }
-        &::after {
-            content: '';
-            position: absolute;
-            right: 0.5px;
-            top: 8px;
-            width: 23px;
-            height: 3px;
-            background: $dark-color;
-        }
-    }
+    .main-header-bar {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        gap: 30px;
 
-    .open-menu{
-        visibility: visible!important;
-        width: 100%;
-        background-color: $white;
-
-        &-items {
-            height: 65vh;
-            display: flex;
+        .main-header-nav {
+            display: none;
             flex-direction: column;
             align-items:center;
-            justify-content:center;
+            justify-content:flex-end;
             gap: 30px;
+            width: 100%;
             transform: translateY(0);
 
-            .active, a:hover {
-                font-weight: map-get($font-weights, semi-bold);
+            &-btn {
+                border: none;
+                position: absolute;
+                right: 35px;
+                top: 20px;
+                width: 23px;
+                height: 3px;
+                background: $dark-color;
+                &::before {
+                    content: '';
+                    position: absolute;
+                    right: 0.5px;
+                    top: -8px;
+                    width: 23px;
+                    height: 3px;
+                    background: $dark-color;
+                }
+                &::after {
+                    content: '';
+                    position: absolute;
+                    right: 0.5px;
+                    top: 8px;
+                    width: 23px;
+                    height: 3px;
+                    background: $dark-color;
+                }
             }
+        }
 
+    }
+    
+
+    .open-menu{
+        display: flex!important;
+        
+        .active, a:hover {
+            font-weight: map-get($font-weights, semi-bold);
         }
     }
+
     .hero-section,
     .main-presentation,
     .main-presentation-items,

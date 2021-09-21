@@ -46,13 +46,13 @@
 }
 
 @keyframes showMenu {
-    from {transform: translateY(-100%)}
+    from {transform: translateY(-10%)}
     to {transform: translateY(0%)}
 }
 
 @keyframes hideMenu {
     from {transform: translateY(0%)}
-    to {transform: translateY(-100%)}
+    to {transform: translateY(-10%)}
 }
 
 
