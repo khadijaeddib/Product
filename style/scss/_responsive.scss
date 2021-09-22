@@ -61,8 +61,8 @@
         overflow-x: hidden;
     }
     body {
-        background: 50% 1950px url(../../images/backgrounds/Bg.svg)no-repeat,
-                    0% 5150px url(../../images/backgrounds/Bg-2.svg)no-repeat!important;
+        background: 50% 1850px url(../../images/backgrounds/Bg.svg)no-repeat,
+                    0% 5050px url(../../images/backgrounds/Bg-2.svg)no-repeat!important;
         background-size: contain!important;
     }
     .container {
@@ -232,16 +232,16 @@
 
 @include media-mobile-md {
     body {
-        background: 50% 2070px url(../../images/backgrounds/Bg.svg)no-repeat,
-                    0% 5250px url(../../images/backgrounds/Bg-2.svg)no-repeat!important;
+        background: 50% 2000px url(../../images/backgrounds/Bg.svg)no-repeat,
+                    0% 5150px url(../../images/backgrounds/Bg-2.svg)no-repeat!important;
         background-size: contain!important;
     }
 }
 
 @include media-mobile-sm {
     body {
-        background: 50% 2150px url(../../images/backgrounds/Bg.svg)no-repeat,
-                    0% 5300px url(../../images/backgrounds/Bg-2.svg)no-repeat!important;
+        background: 50% 2050px url(../../images/backgrounds/Bg.svg)no-repeat,
+                    0% 5200px url(../../images/backgrounds/Bg-2.svg)no-repeat!important;
         background-size: contain!important;
     }
 
