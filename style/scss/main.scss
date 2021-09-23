@@ -7,10 +7,12 @@
 
 body {
     font-family: 'Poppins',sans-serif;
-    background: 50% 850px url(../../images/backgrounds/Bg.svg)no-repeat,
-                0% 3320px url(../../images/backgrounds/Bg-2.svg)no-repeat;
-    background-size: contain;
     scroll-behavior: smooth;
+}
+.body-background {
+    background: 50% 13% url(../../images/backgrounds/Bg.svg)no-repeat,
+                0% 52% url(../../images/backgrounds/Bg-2.svg)no-repeat;
+    background-size: contain;
 }
 .container {
     width: 78%;
@@ -112,3 +114,4 @@ a {
     border-radius: 50%;
     cursor: pointer;
 }
+

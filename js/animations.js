@@ -11,8 +11,6 @@ let targetsToRight = document.querySelectorAll('.animation-to-right')
 let targetsScale = document.querySelectorAll('.animation-scale')
 
 
-
-
 let callbacks = function(entries) {
     entries.forEach(entry => {
         if (entry.intersectionRatio > ratio) {

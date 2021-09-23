@@ -1,7 +1,7 @@
 @include media-xl {
-    body {
-        background: 50% 550px url(../../images/backgrounds/Bg.svg)no-repeat,
-                    0% 3250px url(../../images/backgrounds/Bg-2.svg)no-repeat!important;
+    .body-background {
+        background: 50% 9% url(../../images/backgrounds/Bg.svg)no-repeat,
+                    0% 53% url(../../images/backgrounds/Bg-2.svg)no-repeat!important;
         background-size: contain!important;
     }
     .flex-sections {
@@ -10,9 +10,9 @@
 }
 
 @include media-lg {
-    body {
-        background: 50% 900px url(../../images/backgrounds/Bg.svg)no-repeat,
-                    0% 3400px url(../../images/backgrounds/Bg-2.svg)no-repeat!important;
+    .body-background {
+        background: 50% 13.5% url(../../images/backgrounds/Bg.svg)no-repeat,
+                    0% 52% url(../../images/backgrounds/Bg-2.svg)no-repeat!important;
         background-size: contain!important;
     }
 }
@@ -21,7 +21,10 @@
     body {
         width: 100%;
         overflow: auto;
-        background: 0% 3210px url(../../images/backgrounds/Bg-2.svg)no-repeat!important;
+    }
+    .body-background {
+        background: 50% 13.2% url(../../images/backgrounds/Bg.svg)no-repeat,
+                    0% 48% url(../../images/backgrounds/Bg-2.svg)no-repeat!important;
         background-size: contain!important;
     }
     .main-header-bar {
@@ -29,6 +32,9 @@
     }
     .container {
         width: 90%!important;
+    }
+    .client-items {
+        gap: 30px!important;
     }
     .footer-container {
         width: 90%!important;
@@ -43,12 +49,18 @@
     img[alt="management"],
     img[alt="support"],
     img[alt="collaborative"],
-    img[alt="boost business"] {
+    img[alt="boost business"],
+    img[alt="Apply for a product"],
+    img[alt="Pay fully refundable"],
+    img[alt="Completion"] {
         width: 40vw;
     }
 
     .call-to-action {
         gap: 60px
+    }
+    .call-to-action-container {
+        width: 78%!important;
     }
     .footer-item {
         max-width: 270px!important;
@@ -60,63 +72,63 @@
         width: 100%;
         overflow-x: hidden;
     }
-    body {
-        background: 50% 1850px url(../../images/backgrounds/Bg.svg)no-repeat,
-                    0% 5050px url(../../images/backgrounds/Bg-2.svg)no-repeat!important;
+    .body-background {
+        background: 50% 16% url(../../images/backgrounds/Bg.svg)no-repeat,
+                    0% 43% url(../../images/backgrounds/Bg-2.svg)no-repeat!important;
         background-size: contain!important;
     }
     .container {
         gap: 100px!important;
     }
 
-    .main-header-bar {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        justify-content: flex-start;
-        gap: 30px;
-
-        .main-header-nav {
-            display: none;
+    header {
+        .main-header-bar {
+            display: flex;
             flex-direction: column;
-            align-items:center;
-            justify-content:flex-end;
+            align-items: flex-start;
+            justify-content: flex-start;
             gap: 30px;
-            width: 100%;
-            transform: translateY(0);
-
-            &-btn {
-                border: none;
+    
+            .main-header-nav {
+                display: none;
+                flex-direction: column;
+                align-items:center;
+                justify-content:flex-end;
+                gap: 30px;
+                width: 100%;
+                transform: translateY(0);
+                
+            }
+        }
+        .main-header-nav-btn {
+            border: none;
+            position: absolute;
+            right: 35px;
+            top: 40px;
+            width: 23px;
+            height: 3px;
+            background: $dark-color;
+            &::before {
+                content: '';
                 position: absolute;
-                right: 35px;
-                top: 20px;
+                right: 0.5px;
+                top: -8px;
                 width: 23px;
                 height: 3px;
                 background: $dark-color;
-                &::before {
-                    content: '';
-                    position: absolute;
-                    right: 0.5px;
-                    top: -8px;
-                    width: 23px;
-                    height: 3px;
-                    background: $dark-color;
-                }
-                &::after {
-                    content: '';
-                    position: absolute;
-                    right: 0.5px;
-                    top: 8px;
-                    width: 23px;
-                    height: 3px;
-                    background: $dark-color;
-                }
+            }
+            &::after {
+                content: '';
+                position: absolute;
+                right: 0.5px;
+                top: 8px;
+                width: 23px;
+                height: 3px;
+                background: $dark-color;
             }
         }
-
     }
     
-
     .open-menu{
         display: flex!important;
         
@@ -133,11 +145,20 @@
     .price-table-row,
     .review-section-items,
     .call-to-action,
-    .footer-items {
-        flex-direction: column;
+    .footer-items,
+    .product-features-description,
+    .product-work-item,
+    .product-join-items {
+        flex-direction: column!important;
         align-items: center!important;
         justify-content: center!important;
     }
+
+    .client-items {
+        width: 90%;
+        grid-template-columns: repeat(2,2fr)!important;
+    }
+
     .expert-roles {
         grid-template-columns: repeat(1 ,1fr)!important;
         align-items: center!important;
@@ -147,14 +168,17 @@
     img[alt="management"],
     img[alt="support"],
     img[alt="collaborative"],
-    img[alt="boost business"] {
+    img[alt="boost business"],
+    img[alt="Apply for a product"],
+    img[alt="Pay fully refundable"],
+    img[alt="Completion"] {
         width: 80vw;
     }
     .hero-section,
     .flex-sections {
-        flex-direction: column-reverse;
+        flex-direction: column-reverse!important;
         &.middle {
-            flex-direction: column;
+            flex-direction: column!important;
         }
     }
     .main-presentation {
@@ -177,6 +201,9 @@
         h3 {
             width: 95%;
         }
+        .center-para {
+            width: 90%;
+        }
         .left-in-media {
             flex-direction: row!important;
         }
@@ -191,15 +218,35 @@
             height: 70px!important;
         }
     }
-    .blogs-section-items {
-        & .blogs-section-item {
-            max-width: 100%!important;
-            &-content h4 {
-                width: 85%!important;
+    .blogs-section {
+        &-items {
+            & .blogs-section-item {
+                max-width: 100%!important;
+                &-content h4 {
+                    width: 85%!important;
+                }
             }
+        }
+        & .blogs-slides {
+            display: none;
         }
     }
 
+    .product-work {
+        &-item-content {
+            max-width: 90%!important;
+        }
+        button {
+            display: none;
+        }
+    }
+
+    .product-join {
+        h2 {
+            width: 80%!important;
+        }
+    }
+ 
     .call-to-action {
         gap: 32px;
         &-content {
@@ -231,17 +278,40 @@
 }
 
 @include media-mobile-md {
-    body {
-        background: 50% 2000px url(../../images/backgrounds/Bg.svg)no-repeat,
-                    0% 5150px url(../../images/backgrounds/Bg-2.svg)no-repeat!important;
+    .body-background {
+        background: 50% 16.5% url(../../images/backgrounds/Bg.svg)no-repeat,
+                    0% 42.7% url(../../images/backgrounds/Bg-2.svg)no-repeat!important;
         background-size: contain!important;
     }
+
+    .customer-container {
+        gap: 80px!important;
+
+        .client-container {
+            padding-top: 60px!important;
+            gap: 20px!important;
+        }
+
+        .client-items {
+            width: 30%!important;
+            grid-template-columns: repeat(1,1fr)!important;
+            align-items: center!important;
+            justify-content:center!important;
+        }
+        .product-features {
+            h2 {
+                text-align: center;
+            }
+        }
+    }
+    
+
 }
 
 @include media-mobile-sm {
-    body {
-        background: 50% 2050px url(../../images/backgrounds/Bg.svg)no-repeat,
-                    0% 5200px url(../../images/backgrounds/Bg-2.svg)no-repeat!important;
+    .body-background {
+        background: 50% 17% url(../../images/backgrounds/Bg.svg)no-repeat,
+                    0% 42.3% url(../../images/backgrounds/Bg-2.svg)no-repeat!important;
         background-size: contain!important;
     }
 
@@ -274,4 +344,15 @@
         }
         
     }
+
+    .product-work {
+        h2 {
+            font-size: 30px!important;
+        }
+
+        &-item-content {
+            max-width: 98%!important;
+        }
+    }
 }
+

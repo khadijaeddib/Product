@@ -15,6 +15,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding: 19px 0;
   position: -webkit-sticky;
   position: sticky;
   top: 0;
@@ -708,6 +709,11 @@ footer .footer-items .footer-item .email-form input[type=email]::placeholder {
           transition-delay: .6s;
 }
 
+.reveal4 {
+  -webkit-transition-delay: .9s;
+          transition-delay: .9s;
+}
+
 @-webkit-keyframes shake {
   0% {
     margin-left: 0rem;
@@ -783,8 +789,8 @@ footer .footer-items .footer-item .email-form input[type=email]::placeholder {
 }
 
 @media screen and (min-width: 2560px) {
-  body {
-    background: 50% 550px url(../../images/backgrounds/Bg.svg) no-repeat, 0% 3250px url(../../images/backgrounds/Bg-2.svg) no-repeat !important;
+  .body-background {
+    background: 50% 9% url(../../images/backgrounds/Bg.svg) no-repeat, 0% 53% url(../../images/backgrounds/Bg-2.svg) no-repeat !important;
     background-size: contain !important;
   }
   .flex-sections {
@@ -793,8 +799,8 @@ footer .footer-items .footer-item .email-form input[type=email]::placeholder {
 }
 
 @media screen and (max-width: 1440px) {
-  body {
-    background: 50% 900px url(../../images/backgrounds/Bg.svg) no-repeat, 0% 3400px url(../../images/backgrounds/Bg-2.svg) no-repeat !important;
+  .body-background {
+    background: 50% 13.5% url(../../images/backgrounds/Bg.svg) no-repeat, 0% 52% url(../../images/backgrounds/Bg-2.svg) no-repeat !important;
     background-size: contain !important;
   }
 }
@@ -803,7 +809,9 @@ footer .footer-items .footer-item .email-form input[type=email]::placeholder {
   body {
     width: 100%;
     overflow: auto;
-    background: 0% 3210px url(../../images/backgrounds/Bg-2.svg) no-repeat !important;
+  }
+  .body-background {
+    background: 50% 13.2% url(../../images/backgrounds/Bg.svg) no-repeat, 0% 48% url(../../images/backgrounds/Bg-2.svg) no-repeat !important;
     background-size: contain !important;
   }
   .main-header-bar {
@@ -811,6 +819,9 @@ footer .footer-items .footer-item .email-form input[type=email]::placeholder {
   }
   .container {
     width: 90% !important;
+  }
+  .client-items {
+    gap: 30px !important;
   }
   .footer-container {
     width: 90% !important;
@@ -825,11 +836,17 @@ footer .footer-items .footer-item .email-form input[type=email]::placeholder {
   img[alt="management"],
   img[alt="support"],
   img[alt="collaborative"],
-  img[alt="boost business"] {
+  img[alt="boost business"],
+  img[alt="Apply for a product"],
+  img[alt="Pay fully refundable"],
+  img[alt="Completion"] {
     width: 40vw;
   }
   .call-to-action {
     gap: 60px;
+  }
+  .call-to-action-container {
+    width: 78% !important;
   }
   .footer-item {
     max-width: 270px !important;
@@ -841,14 +858,14 @@ footer .footer-items .footer-item .email-form input[type=email]::placeholder {
     width: 100%;
     overflow-x: hidden;
   }
-  body {
-    background: 50% 1850px url(../../images/backgrounds/Bg.svg) no-repeat, 0% 5050px url(../../images/backgrounds/Bg-2.svg) no-repeat !important;
+  .body-background {
+    background: 50% 16% url(../../images/backgrounds/Bg.svg) no-repeat, 0% 43% url(../../images/backgrounds/Bg-2.svg) no-repeat !important;
     background-size: contain !important;
   }
   .container {
     gap: 100px !important;
   }
-  .main-header-bar {
+  header .main-header-bar {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -864,7 +881,7 @@ footer .footer-items .footer-item .email-form input[type=email]::placeholder {
             justify-content: flex-start;
     gap: 30px;
   }
-  .main-header-bar .main-header-nav {
+  header .main-header-bar .main-header-nav {
     display: none;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -881,16 +898,16 @@ footer .footer-items .footer-item .email-form input[type=email]::placeholder {
     -webkit-transform: translateY(0);
             transform: translateY(0);
   }
-  .main-header-bar .main-header-nav-btn {
+  header .main-header-nav-btn {
     border: none;
     position: absolute;
     right: 35px;
-    top: 20px;
+    top: 40px;
     width: 23px;
     height: 3px;
     background: #22343D;
   }
-  .main-header-bar .main-header-nav-btn::before {
+  header .main-header-nav-btn::before {
     content: '';
     position: absolute;
     right: 0.5px;
@@ -899,7 +916,7 @@ footer .footer-items .footer-item .email-form input[type=email]::placeholder {
     height: 3px;
     background: #22343D;
   }
-  .main-header-bar .main-header-nav-btn::after {
+  header .main-header-nav-btn::after {
     content: '';
     position: absolute;
     right: 0.5px;
@@ -924,17 +941,25 @@ footer .footer-items .footer-item .email-form input[type=email]::placeholder {
   .price-table-row,
   .review-section-items,
   .call-to-action,
-  .footer-items {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+  .footer-items,
+  .product-features-description,
+  .product-work-item,
+  .product-join-items {
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important;
     -webkit-box-align: center !important;
         -ms-flex-align: center !important;
             align-items: center !important;
     -webkit-box-pack: center !important;
         -ms-flex-pack: center !important;
             justify-content: center !important;
+  }
+  .client-items {
+    width: 90%;
+    -ms-grid-columns: (2fr)[2] !important;
+        grid-template-columns: repeat(2, 2fr) !important;
   }
   .expert-roles {
     -ms-grid-columns: (1fr)[1] !important;
@@ -950,22 +975,25 @@ footer .footer-items .footer-item .email-form input[type=email]::placeholder {
   img[alt="management"],
   img[alt="support"],
   img[alt="collaborative"],
-  img[alt="boost business"] {
+  img[alt="boost business"],
+  img[alt="Apply for a product"],
+  img[alt="Pay fully refundable"],
+  img[alt="Completion"] {
     width: 80vw;
   }
   .hero-section,
   .flex-sections {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: column-reverse;
-            flex-direction: column-reverse;
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: reverse !important;
+        -ms-flex-direction: column-reverse !important;
+            flex-direction: column-reverse !important;
   }
   .hero-section.middle,
   .flex-sections.middle {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important;
   }
   .main-presentation h3 {
     width: 85%;
@@ -992,6 +1020,9 @@ footer .footer-items .footer-item .email-form input[type=email]::placeholder {
   .contact-expert-section h3 {
     width: 95%;
   }
+  .contact-expert-section .center-para {
+    width: 90%;
+  }
   .contact-expert-section .left-in-media {
     -webkit-box-orient: horizontal !important;
     -webkit-box-direction: normal !important;
@@ -1016,6 +1047,18 @@ footer .footer-items .footer-item .email-form input[type=email]::placeholder {
   }
   .blogs-section-items .blogs-section-item-content h4 {
     width: 85% !important;
+  }
+  .blogs-section .blogs-slides {
+    display: none;
+  }
+  .product-work-item-content {
+    max-width: 90% !important;
+  }
+  .product-work button {
+    display: none;
+  }
+  .product-join h2 {
+    width: 80% !important;
   }
   .call-to-action {
     gap: 32px;
@@ -1053,15 +1096,36 @@ footer .footer-items .footer-item .email-form input[type=email]::placeholder {
 }
 
 @media screen and (max-width: 375px) {
-  body {
-    background: 50% 2000px url(../../images/backgrounds/Bg.svg) no-repeat, 0% 5150px url(../../images/backgrounds/Bg-2.svg) no-repeat !important;
+  .body-background {
+    background: 50% 16.5% url(../../images/backgrounds/Bg.svg) no-repeat, 0% 42.7% url(../../images/backgrounds/Bg-2.svg) no-repeat !important;
     background-size: contain !important;
+  }
+  .customer-container {
+    gap: 80px !important;
+  }
+  .customer-container .client-container {
+    padding-top: 60px !important;
+    gap: 20px !important;
+  }
+  .customer-container .client-items {
+    width: 30% !important;
+    -ms-grid-columns: (1fr)[1] !important;
+        grid-template-columns: repeat(1, 1fr) !important;
+    -webkit-box-align: center !important;
+        -ms-flex-align: center !important;
+            align-items: center !important;
+    -webkit-box-pack: center !important;
+        -ms-flex-pack: center !important;
+            justify-content: center !important;
+  }
+  .customer-container .product-features h2 {
+    text-align: center;
   }
 }
 
 @media screen and (max-width: 320px) {
-  body {
-    background: 50% 2050px url(../../images/backgrounds/Bg.svg) no-repeat, 0% 5200px url(../../images/backgrounds/Bg-2.svg) no-repeat !important;
+  .body-background {
+    background: 50% 17% url(../../images/backgrounds/Bg.svg) no-repeat, 0% 42.3% url(../../images/backgrounds/Bg-2.svg) no-repeat !important;
     background-size: contain !important;
   }
   .contact-expert-section h3 {
@@ -1086,13 +1150,22 @@ footer .footer-items .footer-item .email-form input[type=email]::placeholder {
   .contact-expert-section .expert-role .message p {
     text-align: center;
   }
+  .product-work h2 {
+    font-size: 30px !important;
+  }
+  .product-work-item-content {
+    max-width: 98% !important;
+  }
 }
 
 body {
   font-family: 'Poppins',sans-serif;
-  background: 50% 850px url(../../images/backgrounds/Bg.svg) no-repeat, 0% 3320px url(../../images/backgrounds/Bg-2.svg) no-repeat;
-  background-size: contain;
   scroll-behavior: smooth;
+}
+
+.body-background {
+  background: 50% 13% url(../../images/backgrounds/Bg.svg) no-repeat, 0% 52% url(../../images/backgrounds/Bg-2.svg) no-repeat;
+  background-size: contain;
 }
 
 .container {

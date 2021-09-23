@@ -38,6 +38,10 @@
     transition-delay: .6s;
 }
 
+.reveal4 {
+    transition-delay: .9s;
+}
+
 @keyframes shake {
     0% { margin-left: 0rem; }
     25% { margin-left: 0.5rem; }
@@ -54,5 +58,3 @@
     from {transform: translateY(0%)}
     to {transform: translateY(-10%)}
 }
-
-
