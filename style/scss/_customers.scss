@@ -1,0 +1,187 @@
+.customer-container {
+    display: flex;
+    flex-direction: column;
+    gap: 115px;
+
+    .client-container {
+        display: flex;
+        flex-direction:column;
+        align-items: center;
+        justify-content: center;
+        gap: 50px;
+        padding-top: 100px;
+    
+        .client-items {
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            grid-gap:64px;
+        }
+    }
+    
+    .product-features {
+        display: flex;
+        flex-direction:column;
+        align-items: center;
+        justify-content:center;
+        gap: 50px;
+        background-color: $hover-color;
+        padding: 24px 0px 68px;
+
+        h2 {
+            font-size: 34px;
+        }
+    
+        &-description {
+            display: flex;
+            gap: 30px;
+            align-items: center;
+            justify-content: center;
+            width: 79%;
+    
+            &-content {
+                display: flex;
+                flex-direction: column;
+                gap: 32px;
+                align-items: center;
+                justify-content: center;
+                border: 1px solid $border-color;
+                padding: 32px;
+
+                h6 {
+                    margin: 0;
+                }
+    
+                p {
+                    text-align: center;
+                    margin: 0;
+                }
+            }
+        }
+    
+    }
+
+    .product-work {
+        display: flex;
+        flex-direction: column;
+        gap: 75px;
+        align-items: center;
+        justify-content: center;
+
+        h2 {
+            font-size: 34px;
+        }
+
+        &-items {
+            display: flex;
+            flex-direction: column;
+            gap: 75px;
+            align-items: center;
+            width: 79%;
+        }
+        &-item {
+            display: flex;
+            gap: 90px;
+            align-items: center;
+            justify-content: center;
+
+            &.right {
+                flex-direction: row-reverse;
+                gap: 76px;
+            }
+
+            &-content {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: flex-start;
+                gap: 16px;
+                max-width: 40%;
+
+                h4 {
+                    font-weight: map-get($font-weights, medium);
+                    font-size: 20px;
+                    margin-bottom: 0;
+                }
+                h6 {
+                    font-weight: map-get($font-weights, semi-bold);
+                    margin-bottom: 0;
+                }
+            }
+        }
+
+    }
+
+    .product-join {
+        background: linear-gradient($hover-color, $white) ;
+        display: flex;
+        flex-direction: column;
+        gap: 93px;
+        align-items: center;
+        justify-content: center;
+        padding: 40px 0;
+
+        &-items {
+            display: flex;
+            align-items: center;
+            gap: 200px;
+        }
+        &-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 27px;
+
+            img[alt="business"] {
+                background-color: #FFEFEF;
+                padding: 45px;
+                border: 1px solid #FFEFEF;
+                border-radius: 50%;
+            }
+
+            img[alt="enterprise"] {
+                background-color: #F2F6FF;
+                padding: 45px;
+                border: 1px solid #F2F6FF;
+                border-radius: 50%;
+            }
+
+            &-content {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                gap: 16px;
+                h4 {
+                    font-weight: map-get($font-weights, medium);
+                    font-size: 24px;
+                    margin-bottom: 0;
+                }
+                h5 {
+                    font-weight: map-get($font-weights, medium);
+                    margin-bottom: 0;
+                }
+                p {
+                    margin: 0;
+                    font-size: 18px;
+                    text-align: center;
+                }
+
+            }
+        }
+
+        h2 {
+            font-size: 32px;
+            text-align: center;
+            margin-bottom: 0;
+            width: 40%;
+        }
+    }
+
+    .call-to-action {
+        &-container {
+            width: 68%;
+            margin: 0 auto;          
+        }
+    }
+}
+
