@@ -1464,17 +1464,17 @@ footer .footer-items .footer-item .email-form input[type=email]::placeholder {
   gap: 150px;
 }
 
-.container-pricing .price-table-pricing-page {
+.price-table-pricing-page {
   padding-top: 50px;
 }
 
-.container-pricing .price-table h3 {
+.price-table h3 {
   font-weight: 600;
   font-size: 24px;
   margin-bottom: 32px;
 }
 
-.container-pricing .pricing-interested {
+.pricing-interested {
   background: -webkit-gradient(linear, left top, left bottom, from(#F5F5F5), to(#fff));
   background: linear-gradient(#F5F5F5, #fff);
   padding: 53px 0;
@@ -1491,6 +1491,74 @@ footer .footer-items .footer-item .email-form input[type=email]::placeholder {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+.product-effects {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 56px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.product-effects-items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 60px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.product-effects-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  gap: 16px;
+  width: 75%;
+}
+
+.product-effects-item-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 14px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.product-effects-item-header h4 {
+  font-size: 24px;
+  margin-bottom: 0;
 }
 
 body {
