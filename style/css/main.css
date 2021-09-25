@@ -1453,6 +1453,16 @@ footer .footer-items .footer-item .email-form input[type=email]::placeholder {
   margin: 0 auto;
 }
 
+.price-table-pricing-page {
+  padding-top: 50px;
+}
+
+.price-table h3 {
+  font-weight: 600;
+  font-size: 24px;
+  margin-bottom: 32px;
+}
+
 body {
   font-family: 'Poppins',sans-serif;
   scroll-behavior: smooth;

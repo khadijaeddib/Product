@@ -1,0 +1,10 @@
+.price-table {
+    &-pricing-page {
+        padding-top: 50px;
+    }
+    h3 {
+        font-weight: map-get($font-weights, semi-bold);
+        font-size: 24px;
+        margin-bottom: 32px;
+    }
+}
