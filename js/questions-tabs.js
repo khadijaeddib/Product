@@ -7,16 +7,16 @@ questionsButtons.forEach( questionButton=> {
 
         const li = questionButton.parentElement
         const ul = li.parentElement.parentElement
-        let ulActiveli = ul.querySelector('.active-li')
-        let ulActivep = ul.querySelector('.active-p')
+        let ulActiveLi = ul.querySelector('.active-li')
+        let ulActiveP = ul.querySelector('.active-p')
         const buttonId = questionButton.getAttribute('class')
         const p = document.querySelector(`#${buttonId}`)
 
         
         if (!showAnswers) {
-            if (ulActiveli && ulActivep) {
-                ulActiveli.classList.remove('active-li')
-                ulActivep.classList.remove('active-p') 
+            if (ulActiveLi && ulActiveP) {
+                ulActiveLi.classList.remove('active-li')
+                ulActiveP.classList.remove('active-p')
             } 
             li.classList.add('active-li')
             p.classList.add('active-p')
