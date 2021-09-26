@@ -176,12 +176,11 @@
             width: 40%;
         }
     }
-
-    .call-to-action {
-        &-container {
-            width: 68%;
-            margin: 0 auto;          
-        }
+}
+.call-to-action {
+    &-container {
+        width: 68%!important;
+        margin: 0 auto;          
     }
 }
 

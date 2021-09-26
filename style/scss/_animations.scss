@@ -58,3 +58,13 @@
     from {transform: translateY(0%)}
     to {transform: translateY(-10%)}
 }
+
+@keyframes showAnswer {
+    from {margin-top: -10px;}
+    to {margin-top: 0;}
+}
+
+@keyframes hideAnswer {
+    from {margin-top: 0;}
+    to {margin-top: -10px;}
+}

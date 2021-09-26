@@ -432,6 +432,10 @@ footer {
                     background-color: #EDFFFC;
                     border-radius: 50%;
                     padding: 11px 9px;
+
+                    &:hover {
+                        background-color:#50b9ad;
+                    }
                 }
             }
 
