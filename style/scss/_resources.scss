@@ -119,3 +119,39 @@
         }
     }
 }
+
+.resource-contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+
+    &-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        h2 {
+            margin-bottom: 17px;
+            font-size: 34px;
+        }
+        p {
+            font-weight: map-get($font-weights, medium);
+            margin: 0;
+        }
+    }
+
+    &-social-media {
+        display: flex;
+        gap: 21px;
+
+        & img{
+            background-color: #EDFFFC;
+            border-radius: 50%;
+            padding: 11px 9px;
+
+            &:hover {
+                background-color:#50b9ad;
+            }
+        }
+    }
+}

@@ -1931,6 +1931,60 @@ footer .footer-items .footer-item .email-form input[type=email]::placeholder {
   color: #02897A;
 }
 
+.resource-contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 50px;
+}
+
+.resource-contact-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.resource-contact-content h2 {
+  margin-bottom: 17px;
+  font-size: 34px;
+}
+
+.resource-contact-content p {
+  font-weight: 500;
+  margin: 0;
+}
+
+.resource-contact-social-media {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 21px;
+}
+
+.resource-contact-social-media img {
+  background-color: #EDFFFC;
+  border-radius: 50%;
+  padding: 11px 9px;
+}
+
+.resource-contact-social-media img:hover {
+  background-color: #50b9ad;
+}
+
 body {
   font-family: 'Poppins',sans-serif;
   scroll-behavior: smooth;
