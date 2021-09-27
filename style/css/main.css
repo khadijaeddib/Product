@@ -879,8 +879,19 @@ footer .footer-items .footer-item .email-form input[type=email]::placeholder {
   img[alt="boost business"],
   img[alt="Apply for a product"],
   img[alt="Pay fully refundable"],
-  img[alt="Completion"] {
+  img[alt="Completion"],
+  img[alt="product great effects"] {
     width: 40vw;
+  }
+  .price-table-pricing-page {
+    width: 95% !important;
+    margin: 0 auto;
+  }
+  .price-table-row {
+    gap: 20px;
+  }
+  .pricing-product-effects-item {
+    width: 100% !important;
   }
   .call-to-action {
     gap: 60px;
@@ -984,7 +995,8 @@ footer .footer-items .footer-item .email-form input[type=email]::placeholder {
   .footer-items,
   .product-features-description,
   .product-work-item,
-  .product-join-items {
+  .product-join-items,
+  .pricing-product-effects-items {
     -webkit-box-orient: vertical !important;
     -webkit-box-direction: normal !important;
         -ms-flex-direction: column !important;
@@ -1018,7 +1030,8 @@ footer .footer-items .footer-item .email-form input[type=email]::placeholder {
   img[alt="boost business"],
   img[alt="Apply for a product"],
   img[alt="Pay fully refundable"],
-  img[alt="Completion"] {
+  img[alt="Completion"],
+  img[alt="product great effects"] {
     width: 80vw;
   }
   .hero-section,
@@ -1102,6 +1115,24 @@ footer .footer-items .footer-item .email-form input[type=email]::placeholder {
   }
   .product-join-items {
     gap: 100px !important;
+  }
+  .pricing-interested h2 {
+    font-size: 32px;
+    width: 80%;
+    text-align: center;
+  }
+  .pricing-interested p {
+    width: 75%;
+    text-align: center;
+  }
+  .pricing-questions {
+    width: 73% !important;
+  }
+  .pricing-questions h2 {
+    font-size: 32px;
+  }
+  .pricing-questions button {
+    text-align: left;
   }
   .call-to-action {
     gap: 32px;
@@ -1489,7 +1520,7 @@ footer .footer-items .footer-item .email-form input[type=email]::placeholder {
 }
 
 .call-to-action-container {
-  width: 68% !important;
+  width: 68%;
   margin: 0 auto;
 }
 
