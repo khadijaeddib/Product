@@ -9,7 +9,8 @@ let targetsToTop = document.querySelectorAll('.animation-to-top')
 let targetsToLeft = document.querySelectorAll('.animation-to-left')
 let targetsToRight = document.querySelectorAll('.animation-to-right')
 let targetsScale = document.querySelectorAll('.animation-scale')
-
+let targetsBottomToTop = document.querySelectorAll('.animation-bottom-to-top')
+let targetsTopToBottom = document.querySelectorAll('.animation-top-to-bottom')
 
 let callbacks = function(entries) {
     entries.forEach(entry => {
@@ -18,6 +19,7 @@ let callbacks = function(entries) {
         }
     })
 }
+
 let observer = new IntersectionObserver(callbacks,options) 
 
 targetsToBottom.forEach(target => {
@@ -37,5 +39,13 @@ targetsToRight.forEach(target => {
 })
 
 targetsScale.forEach(target => {
+    observer.observe(target)
+})
+
+targetsBottomToTop.forEach(target => {
+    observer.observe(target)
+})
+
+targetsTopToBottom.forEach(target => {
     observer.observe(target)
 })

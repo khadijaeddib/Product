@@ -8,6 +8,16 @@
     transform: translateY(-50px);
 }
 
+.animation-bottom-to-top {
+    opacity: 0;
+   animation: animation-bottom-to-top 1s;
+}
+
+.animation-top-to-bottom {
+    opacity: 0;
+    animation: animation-top-to-bottom 1s;
+}
+
 .animation-to-left  {
     opacity: 0;
     transform: translateX(50px);
@@ -27,7 +37,7 @@
     opacity: 1;
     transform: translateY(0px);
     transform: scale(0px);
-    transition: 1s;
+    transition: all 1s;
 }
 
 .reveal2 {
@@ -67,4 +77,18 @@
 @keyframes hideAnswer {
     from {margin-top: 0;}
     to {margin-top: -10px;}
+}
+
+@keyframes animation-bottom-to-top {
+    0% {transform: translateY(0rem)}
+    25% {transform: translateY(2rem) }
+    75% {transform: translateY(-1rem)}
+    100% {transform: translateY(0rem)}
+}
+
+@keyframes animation-top-to-bottom {
+    0% {transform: translateY(0rem)}
+    25% {transform: translateY(-1rem) }
+    75% {transform: translateY(2rem)}
+    100% {transform: translateY(0rem)}
 }
