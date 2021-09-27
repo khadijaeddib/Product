@@ -53,7 +53,8 @@
     img[alt="Apply for a product"],
     img[alt="Pay fully refundable"],
     img[alt="Completion"],
-    img[alt="product great effects"] {
+    img[alt="product great effects"],
+    img[alt="resources hero image"] {
         width: 40vw;
     }
 
@@ -162,7 +163,8 @@
     .product-features-description,
     .product-work-item,
     .product-join-items,
-    .pricing-product-effects-items {
+    .pricing-product-effects-items,
+    .resource-hero {
         flex-direction: column!important;
         align-items: center!important;
         justify-content: center!important;
@@ -186,7 +188,8 @@
     img[alt="Apply for a product"],
     img[alt="Pay fully refundable"],
     img[alt="Completion"],
-    img[alt="product great effects"] {
+    img[alt="product great effects"],
+    img[alt="resources hero image"]  {
         width: 80vw;
     }
     .hero-section,
@@ -285,6 +288,31 @@
             text-align: left;
         }
     }
+
+    .resources-email-form {
+        width: 98%!important;
+    }
+
+    .resource-hero {
+        flex-direction: column-reverse!important;
+    }
+
+    .resource-blogs-section-items {
+        grid-template-columns: repeat(1,6fr)!important;
+    }
+
+    .resource-contact {
+        & iframe {
+            width: 362px!important;
+            height: 343px!important;
+        }
+    }
+
+    .resource-contact-message {
+        border: none!important;
+        padding: 0!important;
+        width: 90%!important;
+    }
  
     .call-to-action {
         gap: 32px;
@@ -343,7 +371,28 @@
             }
         }
     }
-    
+
+    .resource-hero-content {
+        p {
+            font-size: 18px!important;
+        }
+
+        .resources-email-form {
+            width: 100%!important;
+            input[type=email]{
+                padding: 15px!important;
+            }
+            input[type=submit]{
+                padding: 10px 14px!important;
+            }
+        }
+    }
+
+    .resource-contact {
+        & iframe {
+            width: 330px!important;
+        }
+    }
 
 }
 
@@ -391,6 +440,36 @@
 
         &-item-content {
             max-width: 98%!important;
+        }
+    }
+
+    .resource-hero-content {
+        h2 {
+            font-size: 30px;
+        }
+        p {
+            font-size: 14px!important;
+        }
+
+        .resources-email-form {
+            width: 100%!important;
+            input[type=email]{
+                padding: 10px!important;
+
+                &::placeholder {
+                    font-size: 14px!important;
+                }
+            }
+            input[type=submit]{
+                padding: 10px 14px!important;
+                font-size: 14px!important;
+            }
+        }
+    }
+
+    .resource-contact {
+        & iframe {
+            width: 290px!important;
         }
     }
 }

@@ -590,6 +590,10 @@ footer .footer-items .footer-item a {
   gap: 16px;
 }
 
+footer .footer-items .footer-item a:hover {
+  text-decoration: underline;
+}
+
 footer .footer-items .footer-item .footer-social-media {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -968,7 +972,8 @@ footer .footer-items .footer-item .email-form input[type=email]::placeholder {
   img[alt="Apply for a product"],
   img[alt="Pay fully refundable"],
   img[alt="Completion"],
-  img[alt="product great effects"] {
+  img[alt="product great effects"],
+  img[alt="resources hero image"] {
     width: 40vw;
   }
   .price-table-pricing-page {
@@ -1084,7 +1089,8 @@ footer .footer-items .footer-item .email-form input[type=email]::placeholder {
   .product-features-description,
   .product-work-item,
   .product-join-items,
-  .pricing-product-effects-items {
+  .pricing-product-effects-items,
+  .resource-hero {
     -webkit-box-orient: vertical !important;
     -webkit-box-direction: normal !important;
         -ms-flex-direction: column !important;
@@ -1119,7 +1125,8 @@ footer .footer-items .footer-item .email-form input[type=email]::placeholder {
   img[alt="Apply for a product"],
   img[alt="Pay fully refundable"],
   img[alt="Completion"],
-  img[alt="product great effects"] {
+  img[alt="product great effects"],
+  img[alt="resources hero image"] {
     width: 80vw;
   }
   .hero-section,
@@ -1222,6 +1229,28 @@ footer .footer-items .footer-item .email-form input[type=email]::placeholder {
   .pricing-questions button {
     text-align: left;
   }
+  .resources-email-form {
+    width: 98% !important;
+  }
+  .resource-hero {
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: reverse !important;
+        -ms-flex-direction: column-reverse !important;
+            flex-direction: column-reverse !important;
+  }
+  .resource-blogs-section-items {
+    -ms-grid-columns: (6fr)[1] !important;
+        grid-template-columns: repeat(1, 6fr) !important;
+  }
+  .resource-contact iframe {
+    width: 362px !important;
+    height: 343px !important;
+  }
+  .resource-contact-message {
+    border: none !important;
+    padding: 0 !important;
+    width: 90% !important;
+  }
   .call-to-action {
     gap: 32px;
   }
@@ -1283,6 +1312,21 @@ footer .footer-items .footer-item .email-form input[type=email]::placeholder {
   .customer-container .product-features h2 {
     text-align: center;
   }
+  .resource-hero-content p {
+    font-size: 18px !important;
+  }
+  .resource-hero-content .resources-email-form {
+    width: 100% !important;
+  }
+  .resource-hero-content .resources-email-form input[type=email] {
+    padding: 15px !important;
+  }
+  .resource-hero-content .resources-email-form input[type=submit] {
+    padding: 10px 14px !important;
+  }
+  .resource-contact iframe {
+    width: 330px !important;
+  }
 }
 
 @media screen and (max-width: 320px) {
@@ -1317,6 +1361,37 @@ footer .footer-items .footer-item .email-form input[type=email]::placeholder {
   }
   .product-work-item-content {
     max-width: 98% !important;
+  }
+  .resource-hero-content h2 {
+    font-size: 30px;
+  }
+  .resource-hero-content p {
+    font-size: 14px !important;
+  }
+  .resource-hero-content .resources-email-form {
+    width: 100% !important;
+  }
+  .resource-hero-content .resources-email-form input[type=email] {
+    padding: 10px !important;
+  }
+  .resource-hero-content .resources-email-form input[type=email]::-webkit-input-placeholder {
+    font-size: 14px !important;
+  }
+  .resource-hero-content .resources-email-form input[type=email]:-ms-input-placeholder {
+    font-size: 14px !important;
+  }
+  .resource-hero-content .resources-email-form input[type=email]::-ms-input-placeholder {
+    font-size: 14px !important;
+  }
+  .resource-hero-content .resources-email-form input[type=email]::placeholder {
+    font-size: 14px !important;
+  }
+  .resource-hero-content .resources-email-form input[type=submit] {
+    padding: 10px 14px !important;
+    font-size: 14px !important;
+  }
+  .resource-contact iframe {
+    width: 290px !important;
   }
 }
 
@@ -1898,7 +1973,7 @@ footer .footer-items .footer-item .email-form input[type=email]::placeholder {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-  width: 100%;
+  width: 85%;
   border: 1px solid #EAEAEA;
   border-radius: 100px;
 }

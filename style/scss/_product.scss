@@ -422,6 +422,10 @@ footer {
             a {
                 display: flex;
                 gap: 16px;
+
+                &:hover {
+                    text-decoration: underline;
+                }
             }
 
             .footer-social-media {
