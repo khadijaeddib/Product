@@ -1911,6 +1911,10 @@ footer .footer-items .footer-item .email-form input[type=email]::placeholder {
   font-weight: 700;
 }
 
+.resource-blogs-section-item-content h4:hover {
+  color: #02897A;
+}
+
 .resource-blogs-section button {
   border: none;
   background-color: transparent;
@@ -1983,6 +1987,126 @@ footer .footer-items .footer-item .email-form input[type=email]::placeholder {
 
 .resource-contact-social-media img:hover {
   background-color: #50b9ad;
+}
+
+.resource-contact-message {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 1px solid #E8E8E8;
+  border-radius: 20px;
+  padding: 50px;
+  width: 70%;
+}
+
+.resource-contact-message h2 {
+  font-size: 24px;
+}
+
+.resource-contact-message-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 45px;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  width: 100%;
+}
+
+.resource-contact-message-form input[type=text],
+.resource-contact-message-form input[type=email] {
+  width: 100%;
+  border: 1px solid #F5F5F5;
+  border-radius: 39px;
+  background-color: #E8E8E8;
+  padding: 20px;
+}
+
+.resource-contact-message-form input[type=text]::-webkit-input-placeholder,
+.resource-contact-message-form input[type=email]::-webkit-input-placeholder {
+  color: #22343D;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.resource-contact-message-form input[type=text]:-ms-input-placeholder,
+.resource-contact-message-form input[type=email]:-ms-input-placeholder {
+  color: #22343D;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.resource-contact-message-form input[type=text]::-ms-input-placeholder,
+.resource-contact-message-form input[type=email]::-ms-input-placeholder {
+  color: #22343D;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.resource-contact-message-form input[type=text]::placeholder,
+.resource-contact-message-form input[type=email]::placeholder {
+  color: #22343D;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.resource-contact-message-form textarea {
+  width: 100%;
+  border: 1px solid #F5F5F5;
+  background-color: #E8E8E8;
+  padding: 20px;
+  height: 190px;
+}
+
+.resource-contact-message-form textarea::-webkit-input-placeholder {
+  color: #22343D;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.resource-contact-message-form textarea:-ms-input-placeholder {
+  color: #22343D;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.resource-contact-message-form textarea::-ms-input-placeholder {
+  color: #22343D;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.resource-contact-message-form textarea::placeholder {
+  color: #22343D;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.resource-contact-message-form input[type=submit] {
+  border: 1px solid #02897A;
+  background-color: #02897A;
+  color: #fff;
+  border-radius: 35px;
+  padding: 18px 54px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.resource-contact-message-form input[type=submit]:hover {
+  background-color: #046e62;
+  font-weight: 700;
 }
 
 body {

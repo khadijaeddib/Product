@@ -100,7 +100,11 @@
             & .p-bold {
                 font-weight: map-get($font-weights, bold);
             }
+            & h4:hover{
+                color: $primary-color;
+            }
         }
+        
     }
 
     button {
@@ -156,6 +160,66 @@
     }
 }
 
-// iframe {
-//     margin: 0 auto;
-// }
+.resource-contact-message {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #E8E8E8;
+    border-radius: 20px;
+    padding: 50px;
+    width: 70%;
+
+    h2 {
+        font-size: 24px;
+    }
+
+    &-form {
+        display: flex;
+        flex-direction: column;
+        gap: 45px;
+        align-items: flex-start;
+        width: 100%;
+
+        input[type=text],
+        input[type=email]{
+            width: 100%;
+            border: 1px solid $hover-color;
+            border-radius: 39px;
+            background-color: #E8E8E8;
+            padding: 20px;
+
+            &::placeholder {
+                color: $dark-color;
+                font-size: 15px;
+                font-weight: map-get($font-weights, regular);
+            }
+        }
+        textarea{
+            width: 100%;
+            border: 1px solid $hover-color;
+            background-color: #E8E8E8;
+            padding: 20px;
+            height: 190px;
+
+            &::placeholder {
+                color: $dark-color;
+                font-size: 15px;
+                font-weight: map-get($font-weights, regular);
+            }
+        }
+        input[type=submit]{
+            border: 1px solid $primary-color;
+            background-color: $primary-color;
+            color: $white;
+            border-radius: 35px;
+            padding: 18px 54px;
+            font-size: 16px;
+            cursor: pointer;
+
+            &:hover {
+                background-color: #046e62;
+                font-weight: map-get($font-weights, bold);
+            }
+        }
+    }
+}
