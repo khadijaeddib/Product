@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style/css/main.css">
     <script type="text/javascript" src="js/animations.js" defer></script>
-    <script type="text/javascript" src="js/forms_validation.js" defer></script>
+    <script type="text/javascript" src="js/email_form_validation.js" defer></script>
+    <script type="text/javascript" src="js/message_form_validation.js" defer></script>
     <script type="text/javascript" src="js/nav_menu.js" defer></script>
 
     <title>Product</title>
@@ -131,7 +132,7 @@
 
             <section class="resource-contact-message animation-to-bottom">
                 <h2>Send a message</h2>
-                <form name="contactForm" class="resource-contact-message-form">
+                <form onsubmit="return false;" name="contactForm" class="resource-contact-message-form">
                     <input type="text" name="nameInput" placeholder="Your Name" required>
                     <input type="email" name="emailInput" placeholder="Your Email" required>
                     <textarea type="text" name="messageInput" placeholder="Your Message" required></textarea>
