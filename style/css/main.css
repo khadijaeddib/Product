@@ -1745,6 +1745,124 @@ footer .footer-items .footer-item .email-form input[type=email]::placeholder {
   border: none;
 }
 
+.resource-hero {
+  padding-top: 76px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 70px;
+}
+
+.resource-hero-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start !important;
+      -ms-flex-align: start !important;
+          align-items: flex-start !important;
+  gap: 24px;
+}
+
+.resource-hero-content h2 {
+  font-weight: 600;
+  margin-bottom: 0;
+}
+
+.resource-hero-content p {
+  font-size: 20px;
+  margin-bottom: 0;
+}
+
+.resource-hero-content-joins {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.resource-hero-content-joins span {
+  color: #02897A;
+}
+
+.resource-hero-content .resources-email-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  width: 100%;
+  border: 1px solid #EAEAEA;
+  border-radius: 100px;
+}
+
+.resource-hero-content .resources-email-form input[type=email] {
+  width: 100%;
+  border-radius: 100px;
+  padding: 25px;
+  border: none;
+}
+
+.resource-hero-content .resources-email-form input[type=email]::-webkit-input-placeholder {
+  color: #22343D;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.resource-hero-content .resources-email-form input[type=email]:-ms-input-placeholder {
+  color: #22343D;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.resource-hero-content .resources-email-form input[type=email]::-ms-input-placeholder {
+  color: #22343D;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.resource-hero-content .resources-email-form input[type=email]::placeholder {
+  color: #22343D;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.resource-hero-content .resources-email-form input[type=submit] {
+  border: 1px solid #02897A;
+  background-color: #02897A;
+  color: #fff;
+  border-radius: 100px;
+  padding: 20px 24px;
+  font-weight: 600;
+  font-size: 16px;
+  margin: 8px;
+  cursor: pointer;
+}
+
+.resource-hero-content .resources-email-form input[type=submit]:hover {
+  background-color: #046e62;
+  font-weight: 700;
+}
+
 body {
   font-family: 'Poppins',sans-serif;
   scroll-behavior: smooth;

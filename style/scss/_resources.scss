@@ -1,0 +1,69 @@
+.resource-hero {
+    padding-top: 76px;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    gap: 70px;
+
+    &-content {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start!important;
+        gap: 24px;
+        h2 {
+            font-weight: map-get($font-weights, semi-bold);
+            margin-bottom: 0;
+        }
+        p {
+            font-size: 20px;
+            margin-bottom: 0;
+        }
+        &-joins {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            
+            & span {
+                color: $primary-color;
+            }
+        }
+        .resources-email-form {
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            width: 100%;
+            border: 1px solid #EAEAEA;
+            border-radius: 100px;
+
+            input[type=email]{
+                width: 100%;
+                border-radius: 100px;
+                padding: 25px;
+                border: none;
+
+                &::placeholder {
+                    color:#22343D;
+                    font-weight: map-get($font-weights, regular);
+                    font-size: 16px;
+                }
+            }
+            input[type=submit]{
+                border: 1px solid $primary-color;
+                background-color: $primary-color;
+                color: $white;
+                border-radius: 100px;
+                padding: 20px 24px;
+                font-weight: map-get($font-weights, semi-bold);
+                font-size: 16px;
+                margin: 8px;
+                cursor: pointer;
+
+                &:hover {
+                    background-color: #046e62;
+                    font-weight: map-get($font-weights, bold);
+                }
+            }
+
+        }
+    }
+}

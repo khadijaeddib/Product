@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/css/main.css">
+    <script type="text/javascript" src="js/animations.js" defer></script>
+    <script type="text/javascript" src="js/forms_validation.js" defer></script>
+    <script type="text/javascript" src="js/nav_menu.js" defer></script>
+
+    <title>Product</title>
+</head>
+<body>
+
+    <header class="main-header">
+        <section class="main-header-bar">
+            <section class="main-header-logo">
+                <a href="index.html">
+                    <img src="images/logo/logo.svg" alt="product logo">
+                    <h1>Product</h1>
+                </a>
+            </section>
+            <nav class="main-header-nav">
+                <a title="Product" href="index.html">Product</a>
+                <a title="Customers" href="customers.html">Customers</a>
+                <a title="Pricing" href="pricing.html">Pricing</a>
+                <a title="Resources" href="resources.html" class="active">Resources</a>
+        
+                <button class="button signin-btn">Sign In</button>
+                <button class="button">Sign Up</button>
+                <button class="switcher"><img src="images/icons/switcher.svg" alt="dark mode button"></button>
+            </nav>
+        </section>
+        <button class="main-header-nav-btn"></button>
+    </header>
+
+    <main class="container">
+
+        <section class="resource-hero">
+            <img src="images/illustrations/resourceHero.svg" alt="resources hero image">
+            <section class="resource-hero-content">
+                <h2>Great Business made with Product.</h2>
+                <p>Build better customer relationships easily messaging that provides 
+                    a more personal experience for you and your customers.</p>
+                <form onsubmit="return false;" name="emailForm" class="resources-email-form">
+                    <input type="email" name="emailInput" placeholder="Enter your email address" required>
+                    <input type="submit" class="join-button" value="Join Now"></input>
+                </form>
+                <section class="resource-hero-content-joins">
+                    <img src="images/avatars/avatar-join.png" alt="avatar join">
+                    <p>Join over <span>4,000+</span> other</p>
+                </section>
+            </section>
+        </section>
+
+        <section class="call-to-action animation-to-top">
+            <section class="call-to-action-content">
+                <h4>Join 100 Compannies who boost their business with Product</h4>
+                <button class="button">Get This</button>
+            </section>
+            <img src="images/illustrations/booster.svg" alt="boost business">
+        </section>
+    </main>
+
+    <footer class="footer-container">
+        <section class="footer-items">
+            <section class="footer-item col1">
+                <a href="index.html">
+                    <img src="images/logo/logo.svg" alt="product logo">
+                    <h1>Product</h1>
+                </a>
+                <section class="footer-social-media">
+                    <a href="#"><img src="images/icons/instagram.svg" alt="instagram icon"></a>
+                    <a href="#"><img src="images/icons/facebook.svg" alt="facebook icon"></a>
+                    <a href="#"><img src="images/icons/twitter.svg" alt="twitter icon"></a>
+                </section>
+            </section>
+            <section class="footer-item col2">
+                <h5>Resource</h5>
+                <a href="#">About Us</a>
+                <a href="#">Blog</a>
+                <a href="#">Contact</a>
+                <a href="#">FAQ</a>
+            </section>
+            <section class="footer-item">
+                <h5>Legal Stuff</h5>
+                <a href="#">Disclaimer</a>
+                <a href="#">Financing</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+            </section>
+            <section class="footer-item">
+                <h5>knowing you're always on the best energy deal.</h5>
+                <form onsubmit="return false;" name="emailForm" class="email-form">
+                    <input type="email" name="emailInput" placeholder="Enter email" required>
+                    <input type="submit" class="button" value="Sign up Now"></input>
+                </form>
+            </section>
+        </section>
+        <p>Made With Love By Figmaland All Right Reserved</p>
+    </footer>
+</body>
+</html>
