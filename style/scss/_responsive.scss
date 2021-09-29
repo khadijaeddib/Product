@@ -70,6 +70,13 @@
         width: 100%!important;
     }
 
+    .expert-role {
+        & p {
+            padding: 10px!important;
+        }
+        
+    }
+
     .call-to-action {
         gap: 60px
     }
@@ -87,8 +94,8 @@
         overflow-x: hidden;
     }
     .body-background {
-        background: 50% 16% url(../../images/backgrounds/Bg.svg)no-repeat,
-                    0% 43% url(../../images/backgrounds/Bg-2.svg)no-repeat!important;
+        background: 50% 13.5% url(../../images/backgrounds/Bg.svg)no-repeat,
+                    0% 35.7% url(../../images/backgrounds/Bg-2.svg)no-repeat!important;
         background-size: contain!important;
     }
     .container {
@@ -142,7 +149,18 @@
             }
         }
     }
-    
+    .open {
+        background: transparent!important;
+
+        &::before {
+            transform: rotate(45deg) translate(5px, 8px);
+        }
+
+        &::after {
+            transform: rotate(-45deg) translate(3px, -7px);
+        }
+    }
+
     .open-menu{
         display: flex!important;
         
@@ -180,6 +198,7 @@
         align-items: center!important;
         justify-content: center!important;
     }
+
     img[alt="hero illustration"],
     img[alt="management"],
     img[alt="support"],
@@ -199,6 +218,18 @@
             flex-direction: column!important;
         }
     }
+
+    .hero-section-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        h2,p {
+            text-align: center;
+        }
+    }
+
     .main-presentation {
         h3 {
             width: 85%;
@@ -237,11 +268,19 @@
         }
     }
     .blogs-section {
+        h2,p {
+            text-align: center;
+        }
         &-items {
             & .blogs-section-item {
                 max-width: 100%!important;
-                &-content h4 {
-                    width: 85%!important;
+                &-content {
+                    p {
+                        text-align: left!important;
+                    }
+                    h4 {
+                        width: 85%!important;
+                    }
                 }
             }
         }
@@ -295,6 +334,17 @@
 
     .resource-hero {
         flex-direction: column-reverse!important;
+
+        &-content {
+            h2 {
+                text-align: center;
+                font-size: 36px;
+            }
+            p {
+                text-align: center;
+            }
+
+        }
     }
 
     .resource-blogs-section-items {
@@ -346,9 +396,15 @@
 
 @include media-mobile-md {
     .body-background {
-        background: 50% 16.5% url(../../images/backgrounds/Bg.svg)no-repeat,
-                    0% 42.7% url(../../images/backgrounds/Bg-2.svg)no-repeat!important;
+        background: 50% 13.7% url(../../images/backgrounds/Bg.svg)no-repeat,
+                    0% 35.4% url(../../images/backgrounds/Bg-2.svg)no-repeat!important;
         background-size: contain!important;
+    }
+
+    .expert-role {
+        & p {
+            padding: 8px!important;
+        }
     }
 
     .customer-container {
@@ -398,8 +454,8 @@
 
 @include media-mobile-sm {
     .body-background {
-        background: 50% 17% url(../../images/backgrounds/Bg.svg)no-repeat,
-                    0% 42.3% url(../../images/backgrounds/Bg-2.svg)no-repeat!important;
+        background: 50% 13.9% url(../../images/backgrounds/Bg.svg)no-repeat,
+                    0% 35.2% url(../../images/backgrounds/Bg-2.svg)no-repeat!important;
         background-size: contain!important;
     }
 
@@ -417,20 +473,15 @@
             img[alt="second expert"],
             img[alt="third expert"],
             img[alt="fourth expert"] {
-                width: 50px!important;
-                height: 50px!important;
-            }
-
-            .message{
-                img{
-                    width: 95%;
-                }
-                p {
-                    text-align: center;
-                }
+                width: 60px!important;
+                height: 60px!important;
             }
         }
         
+    }
+
+    .hero-section-btns{ 
+            gap: 3px!important;
     }
 
     .product-work {

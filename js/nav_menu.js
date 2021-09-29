@@ -8,6 +8,7 @@ menuButton.addEventListener('click', toggleMenu)
 function toggleMenu() {
     if (!showMenu) {
         HeaderNavCollapse.classList.add('open-menu')
+        menuButton.classList.add('open')
 
         HeaderNavCollapse.style.animation = 'showMenu 1s'
         
@@ -18,6 +19,8 @@ function toggleMenu() {
 
         setTimeout(function(){ 
             HeaderNavCollapse.classList.remove('open-menu')
+            menuButton.classList.remove('open')
+
         }, 400)
         
         showMenu = false

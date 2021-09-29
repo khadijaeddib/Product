@@ -1,4 +1,4 @@
-fetch('price_table.json')
+fetch('data/price_table.json')
 .then  (response => response.json())
 .then (data => buildTable(data))
 

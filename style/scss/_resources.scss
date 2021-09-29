@@ -146,12 +146,18 @@
 
     &-social-media {
         display: flex;
-        gap: 21px;
+        align-items: center;
+        gap: 16px;
 
-        & img{
+        & a {
             background-color: #EDFFFC;
-            border-radius: 50%;
-            padding: 11px 9px;
+            border-radius: 100%;
+            padding: 10px;
+
+            img {
+                width: 32px;
+                height: 32px;
+            }
 
             &:hover {
                 background-color:#50b9ad;

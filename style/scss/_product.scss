@@ -3,7 +3,6 @@
     background-color: $white;
     display: flex;
     align-items: center;
-    // height: 80px;
     padding: 19px 0;
     position: sticky;
     top: 0;
@@ -64,6 +63,7 @@
             display: flex;
             align-items: center;
             gap: 8px;
+            padding: 0;
 
             &:hover {
                 background-color: $hover-color;
@@ -129,26 +129,46 @@
         display: grid;
         grid-template-columns: repeat(2 ,1fr);
         column-gap: 180px;
+        row-gap:24px ;
     
         .expert-role {
             display: flex;
             align-items: center;
             gap: 16px;
+
+            p {
+                margin: 0;
+                text-align: center;
+                position: relative;
+                background-color: $white;
+                border-radius: 27px;
+                padding: 15px 20px;
+                box-shadow: 0 1px 4px 3px rgba(0,0,0,.1);
+
+                &::after {
+                    content: "";
+                    position: absolute;
+                    right: 15%;
+                    bottom: -8px;
+                    border-radius: 80%;
+                    border-right: 18px solid $white;
+                    border-bottom: 18px solid transparent;
+                    box-shadow: 0 2px 2px 0px rgba(0,0,0,.1);
+                }
+            }
+
+            &.cloud-left {
+                p {
+                    &::after {
+                        right: 80%!important;
+                    }
+                }
+            }
         }
     
         .right {
             flex-direction: row-reverse;
             text-align: right;
-        }
-
-        .message {
-            position: relative;
-
-            & p {
-                position: absolute;
-                top: 40%;
-                transform: translate(3%,-50%);
-            }
         }
     }
     .center {
@@ -170,17 +190,20 @@
         margin-bottom: 12px;
     }
 
-    .blogs-section-items {
+    &-items {
         padding-top: 20px;
         display: flex;
-        justify-content: center;
+        align-items: center;
         gap: 32px;
+        overflow-x: hidden;
+       
 
         .blogs-section-item{
             border: 1px solid #DEDEDE;
             border-radius: 9px;
-            max-width: 31%;
-
+            min-width: 31%;
+            position: relative;
+            
             &:hover  {
                 transform: translate3d(0, -15px, 0);
             }
@@ -196,8 +219,8 @@
                     font-weight: map-get($font-weights, bold);
                 }
             }
-
-            .active-title, & :hover{
+            
+            & h4:hover{
                 color: $primary-color;
             }
             
@@ -406,6 +429,10 @@ footer {
 
         .col1 {
             padding-right: 80px;
+
+            a:hover {
+                text-decoration: none!important;
+            }
         }
 
         .col2 {
@@ -430,13 +457,19 @@ footer {
 
             .footer-social-media {
                 display: flex;
+                align-items: center;
                 gap: 16px;
 
-                & img{
+                & a {
                     background-color: #EDFFFC;
-                    border-radius: 50%;
-                    padding: 11px 9px;
+                    padding: 8px;
+                    border-radius: 100%;
 
+                    img {
+                        width: 24px;
+                        height: 24px;
+                    }
+                    
                     &:hover {
                         background-color:#50b9ad;
                     }
