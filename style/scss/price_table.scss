@@ -1,0 +1,94 @@
+@import "variables";
+.price-table {
+    h2 {
+        font-size: 34px;
+        text-align: center;
+    }
+    p {
+        font-weight: map-get($font-weights, medium);
+        text-align: center;
+    }
+
+    &-row {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 70px;
+    }
+    &-column {
+        border: 1px solid #FFFFFF;
+        box-shadow: 0 1px 4px 0 rgba(0,0,0,.1);
+        border-radius: 8px;
+        padding: 32px 73px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        h4 {
+            font-size: 24px;
+        }
+        p {
+            text-align: left;
+            margin-bottom: 16px;
+        }
+        h2 {
+            font-size: 76px;
+            text-align: left;
+            color: $primary-color;
+            margin-bottom: 0px;
+        }
+        h4 {
+            color: $primary-color;
+            font-weight: map-get($font-weights, bold);
+            font-size: 24px;
+            margin-bottom: 4px;
+        }
+        h5 {
+            color: #AFAFAF;
+            font-weight: map-get($font-weights, regular);
+        }
+        .price-value {
+            display: flex;
+            align-items:center;
+        }
+        .button {
+            margin-top: 20px;
+        }
+        .center {
+            text-align: center;
+        }
+
+        &:hover  {
+            transform: scale(1.1);
+        }
+    }
+    .standard {
+        background-color: $primary-color;
+
+        h2,h4,h6,p {
+            color: $white;
+        }
+        .button {
+            background-color: $white;
+            color: $primary-color;
+        }
+    }
+}
+
+
+
+@include media-md {
+    .price-table-row {
+        gap: 20px;
+    }
+}
+
+@include media-mobile-lg {
+    .price-table-row {
+        flex-direction: column!important;
+        align-items: center!important;
+        justify-content: center!important;
+    }
+}
+
+    

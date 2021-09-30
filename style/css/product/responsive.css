@@ -1,0 +1,210 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+@media screen and (min-width: 2560px) {
+  .body-background {
+    background: 50% 9% url(../../../images/backgrounds/Bg.svg) no-repeat, 0% 53% url(../../../images/backgrounds/Bg-2.svg) no-repeat !important;
+    background-size: contain !important;
+  }
+  .flex-sections {
+    gap: 300px;
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  .body-background {
+    background: 50% 13.5% url(../../../images/backgrounds/Bg.svg) no-repeat, 0% 52% url(../../../images/backgrounds/Bg-2.svg) no-repeat !important;
+    background-size: contain !important;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .body-background {
+    background: 50% 13.2% url(../../../images/backgrounds/Bg.svg) no-repeat, 0% 48% url(../../../images/backgrounds/Bg-2.svg) no-repeat !important;
+    background-size: contain !important;
+  }
+  img[alt="hero illustration"],
+  img[alt="management"],
+  img[alt="support"],
+  img[alt="collaborative"] {
+    width: 40vw;
+  }
+  .expert-role p {
+    padding: 10px !important;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .body-background {
+    background: 50% 13.5% url(../../../images/backgrounds/Bg.svg) no-repeat, 0% 35.7% url(../../../images/backgrounds/Bg-2.svg) no-repeat !important;
+    background-size: contain !important;
+  }
+  .hero-section,
+  .main-presentation,
+  .main-presentation-items,
+  .flex-sections,
+  .blogs-section-items,
+  .review-section-items {
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important;
+    -webkit-box-align: center !important;
+        -ms-flex-align: center !important;
+            align-items: center !important;
+    -webkit-box-pack: center !important;
+        -ms-flex-pack: center !important;
+            justify-content: center !important;
+  }
+  .expert-roles {
+    -ms-grid-columns: (1fr)[1] !important;
+        grid-template-columns: repeat(1, 1fr) !important;
+    -webkit-box-align: center !important;
+        -ms-flex-align: center !important;
+            align-items: center !important;
+    -webkit-box-pack: center !important;
+        -ms-flex-pack: center !important;
+            justify-content: center !important;
+  }
+  img[alt="hero illustration"],
+  img[alt="management"],
+  img[alt="support"],
+  img[alt="collaborative"] {
+    width: 80vw;
+  }
+  .hero-section,
+  .flex-sections {
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: reverse !important;
+        -ms-flex-direction: column-reverse !important;
+            flex-direction: column-reverse !important;
+  }
+  .hero-section.middle,
+  .flex-sections.middle {
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important;
+  }
+  .hero-section-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .hero-section-content h2, .hero-section-content p {
+    text-align: center;
+  }
+  .main-presentation h3 {
+    width: 85%;
+  }
+  .main-presentation-item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .main-presentation-item p {
+    text-align: center;
+    width: 70%;
+  }
+  .contact-expert-section h3 {
+    width: 95%;
+  }
+  .contact-expert-section .center-para {
+    width: 90%;
+  }
+  .contact-expert-section .left-in-media {
+    -webkit-box-orient: horizontal !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: row !important;
+            flex-direction: row !important;
+  }
+  .contact-expert-section .right-in-media {
+    -webkit-box-orient: horizontal !important;
+    -webkit-box-direction: reverse !important;
+        -ms-flex-direction: row-reverse !important;
+            flex-direction: row-reverse !important;
+  }
+  .contact-expert-section img[alt="first expert"],
+  .contact-expert-section img[alt="second expert"],
+  .contact-expert-section img[alt="third expert"],
+  .contact-expert-section img[alt="fourth expert"] {
+    width: 70px !important;
+    height: 70px !important;
+  }
+  .blogs-section h2, .blogs-section p {
+    text-align: center;
+  }
+  .blogs-section-items .blogs-section-item {
+    max-width: 100% !important;
+  }
+  .blogs-section-items .blogs-section-item-content p {
+    text-align: left !important;
+  }
+  .blogs-section-items .blogs-section-item-content h4 {
+    width: 85% !important;
+  }
+  .blogs-section .blogs-slides {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .body-background {
+    background: 50% 13.7% url(../../../images/backgrounds/Bg.svg) no-repeat, 0% 35.4% url(../../../images/backgrounds/Bg-2.svg) no-repeat !important;
+    background-size: contain !important;
+  }
+  .expert-role p {
+    padding: 8px !important;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .body-background {
+    background: 50% 13.9% url(../../../images/backgrounds/Bg.svg) no-repeat, 0% 35.2% url(../../../images/backgrounds/Bg-2.svg) no-repeat !important;
+    background-size: contain !important;
+  }
+  .contact-expert-section h3 {
+    width: 90%;
+  }
+  .contact-expert-section .center-para {
+    width: 80%;
+  }
+  .contact-expert-section .expert-role {
+    gap: 10px !important;
+  }
+  .contact-expert-section .expert-role img[alt="first expert"],
+  .contact-expert-section .expert-role img[alt="second expert"],
+  .contact-expert-section .expert-role img[alt="third expert"],
+  .contact-expert-section .expert-role img[alt="fourth expert"] {
+    width: 60px !important;
+    height: 60px !important;
+  }
+  .hero-section-btns {
+    gap: 3px !important;
+  }
+}
+/*# sourceMappingURL=responsive.css.map */

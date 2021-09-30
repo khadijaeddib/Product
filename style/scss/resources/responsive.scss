@@ -1,0 +1,110 @@
+@import "../variables";
+@include media-md {
+    img[alt="resources hero image"] {
+        width: 40vw;
+    }
+}
+@include media-mobile-lg {
+    .resource-hero {
+        flex-direction: column!important;
+        align-items: center!important;
+        justify-content: center!important;
+    }
+
+    img[alt="resources hero image"]  {
+        width: 80vw;
+    }
+
+    .resources-email-form {
+        width: 98%!important;
+    }
+
+    .resource-hero {
+        flex-direction: column-reverse!important;
+
+        &-content {
+            h2 {
+                text-align: center;
+                font-size: 36px;
+            }
+            p {
+                text-align: center;
+            }
+
+        }
+    }
+
+    .resource-blogs-section-items {
+        grid-template-columns: repeat(1,6fr)!important;
+    }
+
+    .resource-contact {
+        & iframe {
+            width: 362px!important;
+            height: 343px!important;
+        }
+    }
+
+    .resource-contact-message {
+        border: none!important;
+        padding: 0!important;
+        width: 90%!important;
+    }
+}
+
+@include media-mobile-md {
+    .resource-hero-content {
+        p {
+            font-size: 18px!important;
+        }
+
+        .resources-email-form {
+            width: 100%!important;
+            input[type=email]{
+                padding: 15px!important;
+            }
+            input[type=submit]{
+                padding: 10px 14px!important;
+            }
+        }
+    }
+
+    .resource-contact {
+        & iframe {
+            width: 330px!important;
+        }
+    }
+}
+
+@include media-mobile-sm {
+    .resource-hero-content {
+        h2 {
+            font-size: 30px;
+        }
+        p {
+            font-size: 14px!important;
+        }
+
+        .resources-email-form {
+            width: 100%!important;
+            input[type=email]{
+                padding: 10px!important;
+
+                &::placeholder {
+                    font-size: 14px!important;
+                }
+            }
+            input[type=submit]{
+                padding: 10px 14px!important;
+                font-size: 14px!important;
+            }
+        }
+    }
+
+    .resource-contact {
+        & iframe {
+            width: 290px!important;
+        }
+    }
+}
+

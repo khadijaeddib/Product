@@ -1,0 +1,87 @@
+@import "../variables";
+@include media-md {
+    .client-items {
+        gap: 30px!important;
+    }
+    
+    img[alt="Apply for a product"],
+    img[alt="Pay fully refundable"],
+    img[alt="Completion"] {
+        width: 40vw;
+    }
+}
+
+@include media-mobile-lg {
+    .product-features-description,
+    .product-work-item,
+    .product-join-items {
+        flex-direction: column!important;
+        align-items: center!important;
+        justify-content: center!important;
+    }
+
+    .client-items {
+        width: 90%;
+        grid-template-columns: repeat(2,2fr)!important;
+    }
+
+    img[alt="Apply for a product"],
+    img[alt="Pay fully refundable"],
+    img[alt="Completion"] {
+        width: 80vw;
+    }
+
+    .product-work {
+        &-item-content {
+            max-width: 90%!important;
+        }
+        button {
+            display: none;
+        }
+    }
+
+    .product-join {
+        h2 {
+            width: 80%!important;
+        }
+        &-items {
+            gap: 100px!important;
+        }
+    }
+}
+
+@include media-mobile-md {
+    .customer-container {
+        gap: 80px!important;
+
+        .client-container {
+            padding-top: 60px!important;
+            gap: 20px!important;
+        }
+
+        .client-items {
+            width: 30%!important;
+            grid-template-columns: repeat(1,1fr)!important;
+            align-items: center!important;
+            justify-content:center!important;
+        }
+        .product-features {
+            h2 {
+                text-align: center;
+            }
+        }
+    }
+}
+
+@include media-mobile-sm {
+    .product-work {
+        h2 {
+            font-size: 30px!important;
+        }
+
+        &-item-content {
+            max-width: 98%!important;
+        }
+    }
+}
+

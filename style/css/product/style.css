@@ -1,0 +1,347 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.hero-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  gap: 56px;
+  padding-top: 25px;
+}
+
+.hero-section-btns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: left;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 30px;
+}
+
+.hero-section-btns .play-btn {
+  background-color: #fff;
+  color: #02897A;
+  text-decoration: underline;
+  border: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 8px;
+  padding: 0;
+}
+
+.hero-section-btns .play-btn:hover {
+  background-color: #F5F5F5;
+  font-weight: 700;
+}
+
+.main-presentation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-bottom: 100px;
+}
+
+.main-presentation-items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 46px;
+}
+
+.flex-sections {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 84px;
+}
+
+.flex-sections .left {
+  font-size: 32px;
+  margin-bottom: 23px;
+}
+
+.flex-sections .support-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 30px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.flex-sections .support-list .check-icons-margin {
+  margin-bottom: 30px;
+}
+
+.contact-expert-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 32px;
+  padding-top: 50px;
+}
+
+.contact-expert-section h3 {
+  margin-bottom: 0px;
+}
+
+.contact-expert-section .center-para {
+  width: 60%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.contact-expert-section .expert-roles {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  -webkit-column-gap: 180px;
+          column-gap: 180px;
+  row-gap: 24px;
+}
+
+.contact-expert-section .expert-roles .expert-role {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 16px;
+}
+
+.contact-expert-section .expert-roles .expert-role p {
+  margin: 0;
+  text-align: center;
+  position: relative;
+  background-color: #fff;
+  border-radius: 27px;
+  padding: 15px 20px;
+  -webkit-box-shadow: 0 1px 4px 3px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 1px 4px 3px rgba(0, 0, 0, 0.1);
+}
+
+.contact-expert-section .expert-roles .expert-role p::after {
+  content: "";
+  position: absolute;
+  right: 15%;
+  bottom: -8px;
+  border-radius: 80%;
+  border-right: 18px solid #fff;
+  border-bottom: 18px solid transparent;
+  -webkit-box-shadow: 0 2px 2px 0px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 2px 2px 0px rgba(0, 0, 0, 0.1);
+}
+
+.contact-expert-section .expert-roles .expert-role.cloud-left p::after {
+  right: 80% !important;
+}
+
+.contact-expert-section .expert-roles .right {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  text-align: right;
+}
+
+.contact-expert-section .center {
+  margin-top: 48px;
+}
+
+.blogs-section h2 {
+  font-size: 34px;
+  margin-bottom: 8px;
+}
+
+.blogs-section h4 {
+  font-weight: 700;
+  font-size: 24px;
+}
+
+.blogs-section p {
+  margin-bottom: 12px;
+}
+
+.blogs-section-items {
+  padding-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 32px;
+  overflow-x: hidden;
+}
+
+.blogs-section-items .blogs-section-item {
+  border: 1px solid #DEDEDE;
+  border-radius: 9px;
+  min-width: 31%;
+  position: relative;
+}
+
+.blogs-section-items .blogs-section-item:hover {
+  -webkit-transform: translate3d(0, -15px, 0);
+          transform: translate3d(0, -15px, 0);
+}
+
+.blogs-section-items .blogs-section-item img {
+  width: 100%;
+}
+
+.blogs-section-items .blogs-section-item-content {
+  padding: 24px;
+}
+
+.blogs-section-items .blogs-section-item-content .p-bold {
+  font-weight: 700;
+}
+
+.blogs-section-items .blogs-section-item h4:hover {
+  color: #02897A;
+}
+
+.blogs-section .blogs-slides {
+  list-style: none;
+  text-align: center;
+  font-size: 60px;
+  color: #EFEFEF;
+}
+
+.blogs-section .blogs-slides li {
+  display: inline-block;
+}
+
+.blogs-section .blogs-slides button {
+  border: 1px solid #EFEFEF;
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  border-radius: 7px;
+  margin: 0 10px;
+  cursor: pointer;
+}
+
+.blogs-section .blogs-slides .active-button, .blogs-section .blogs-slides button:hover {
+  background-color: #02897A;
+}
+
+.review-section h2 {
+  font-size: 34px;
+  text-align: center;
+}
+
+.review-section p {
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 0;
+}
+
+.review-section-items {
+  padding-top: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 64px;
+}
+
+.review-section-item {
+  border: 1px solid #FFFFFF;
+  -webkit-box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.1);
+          box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.1);
+  padding: 26px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 16px;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.review-section-item p {
+  font-weight: 400;
+  color: #737373;
+  text-align: justify;
+}
+
+.review-section-item .reviewer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 14px;
+}
+
+.review-section-item .reviewer img {
+  width: 50px;
+  height: 50px;
+}
+
+.review-section-item .reviewer-information p {
+  margin-bottom: 0;
+}
+
+.review-section-item .reviewer-information .reviewer-name {
+  font-weight: 600;
+  color: #02897A;
+}
+
+.review-section-item .reviewer-information .reviewer-job {
+  font-size: 14px;
+  font-weight: 500;
+}
+/*# sourceMappingURL=product.css.map */

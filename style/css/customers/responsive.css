@@ -1,0 +1,90 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+@media screen and (max-width: 1024px) {
+  .client-items {
+    gap: 30px !important;
+  }
+  img[alt="Apply for a product"],
+  img[alt="Pay fully refundable"],
+  img[alt="Completion"] {
+    width: 40vw;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .product-features-description,
+  .product-work-item,
+  .product-join-items {
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important;
+    -webkit-box-align: center !important;
+        -ms-flex-align: center !important;
+            align-items: center !important;
+    -webkit-box-pack: center !important;
+        -ms-flex-pack: center !important;
+            justify-content: center !important;
+  }
+  .client-items {
+    width: 90%;
+    -ms-grid-columns: (2fr)[2] !important;
+        grid-template-columns: repeat(2, 2fr) !important;
+  }
+  img[alt="Apply for a product"],
+  img[alt="Pay fully refundable"],
+  img[alt="Completion"] {
+    width: 80vw;
+  }
+  .product-work-item-content {
+    max-width: 90% !important;
+  }
+  .product-work button {
+    display: none;
+  }
+  .product-join h2 {
+    width: 80% !important;
+  }
+  .product-join-items {
+    gap: 100px !important;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .customer-container {
+    gap: 80px !important;
+  }
+  .customer-container .client-container {
+    padding-top: 60px !important;
+    gap: 20px !important;
+  }
+  .customer-container .client-items {
+    width: 30% !important;
+    -ms-grid-columns: (1fr)[1] !important;
+        grid-template-columns: repeat(1, 1fr) !important;
+    -webkit-box-align: center !important;
+        -ms-flex-align: center !important;
+            align-items: center !important;
+    -webkit-box-pack: center !important;
+        -ms-flex-pack: center !important;
+            justify-content: center !important;
+  }
+  .customer-container .product-features h2 {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .product-work h2 {
+    font-size: 30px !important;
+  }
+  .product-work-item-content {
+    max-width: 98% !important;
+  }
+}
+/*# sourceMappingURL=responsive.css.map */

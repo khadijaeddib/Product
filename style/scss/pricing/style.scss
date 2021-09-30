@@ -1,3 +1,4 @@
+@import "../variables";
 .container-pricing {
     display: flex;
     flex-direction: column;
@@ -14,6 +15,7 @@
         margin-bottom: 32px;
     }
 }
+
 .pricing-interested {
     background:linear-gradient($hover-color,$white);
     padding: 53px 0;
@@ -22,6 +24,7 @@
     align-items: center;
     justify-content: center;
 }
+
 .pricing-product-effects {
     display: flex;
     flex-direction: column;
@@ -123,7 +126,7 @@
                     left: -36px;
                     width: 24px;
                     height: 24px;
-                    background-image: url('../../images/icons/plus.svg');
+                    background-image: url('../../../images/icons/plus.svg');
                 }
             }
 
@@ -141,7 +144,7 @@
             }
             .active button{
                 &:before {
-                    background-image: url('../../images/icons/min.svg');
+                    background-image: url('../../../images/icons/min.svg');
                 }
             }
         }
@@ -151,6 +154,12 @@
             height: 1px;
             border: none;
         }
+    }
+}
+.call-to-action {
+    &-container {
+        width: 68%;
+        margin: 0 auto;          
     }
 }
 

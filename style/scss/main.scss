@@ -1,11 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 @import "variables";
-@import "product";
 @import "animations";
-@import "responsive";
-@import "customers";
-@import "pricing";
-@import "resources";
 
 
 body {
@@ -116,5 +111,26 @@ a {
     border: none;
     border-radius: 50%;
     cursor: pointer;
+}
+
+
+@include media-md {
+    body {
+        width: 100%;
+        overflow: auto;
+    }
+    .container {
+        width: 90%!important;
+    }
+}
+
+@include media-mobile-lg {
+    html, body {
+        width: 100%;
+        overflow-x: hidden;
+    }
+    .container {
+        gap: 100px!important;
+    }
 }
 

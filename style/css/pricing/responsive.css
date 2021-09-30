@@ -1,0 +1,56 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+@media screen and (max-width: 1024px) {
+  img[alt="product great effects"] {
+    width: 40vw;
+  }
+  .price-table-pricing-page {
+    width: 95% !important;
+    margin: 0 auto;
+  }
+  .pricing-product-effects-item {
+    width: 100% !important;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .pricing-product-effects-items {
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important;
+    -webkit-box-align: center !important;
+        -ms-flex-align: center !important;
+            align-items: center !important;
+    -webkit-box-pack: center !important;
+        -ms-flex-pack: center !important;
+            justify-content: center !important;
+  }
+  img[alt="product great effects"] {
+    width: 80vw;
+  }
+  .pricing-interested h2 {
+    font-size: 32px;
+    width: 80%;
+    text-align: center;
+  }
+  .pricing-interested p {
+    width: 75%;
+    text-align: center;
+  }
+  .pricing-questions {
+    width: 73% !important;
+  }
+  .pricing-questions h2 {
+    font-size: 32px;
+  }
+  .pricing-questions button {
+    text-align: left;
+  }
+}
+/*# sourceMappingURL=responsive.css.map */

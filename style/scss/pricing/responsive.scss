@@ -1,0 +1,50 @@
+@import "../variables";
+@include media-md {
+    img[alt="product great effects"] {
+        width: 40vw;
+    }
+
+    .price-table-pricing-page {
+        width: 95%!important;
+        margin: 0 auto;
+    }
+
+    .pricing-product-effects-item {
+        width: 100%!important;
+    }
+}
+
+@include media-mobile-lg {
+    .pricing-product-effects-items {
+        flex-direction: column!important;
+        align-items: center!important;
+        justify-content: center!important;
+    }
+
+    img[alt="product great effects"] {
+        width: 80vw;
+    }
+
+    .pricing-interested {
+        h2 {
+            font-size: 32px;
+            width: 80%;
+            text-align: center;
+        }
+        p {
+            width: 75%;
+            text-align: center;
+        }
+    }
+
+    .pricing-questions {
+        width: 73%!important;
+        h2 {
+            font-size: 32px;
+        }
+        button {
+            text-align: left;
+        }
+    }
+}
+
