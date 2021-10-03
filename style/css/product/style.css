@@ -1,10 +1,3 @@
-* {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
 .hero-section {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -344,4 +337,4 @@
   font-size: 14px;
   font-weight: 500;
 }
-/*# sourceMappingURL=product.css.map */
+/*# sourceMappingURL=style.css.map */

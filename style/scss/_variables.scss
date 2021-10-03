@@ -11,12 +11,6 @@ $font-weights: (
     "bold":700
 );
 
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
 
 @mixin media-xl {
     @media screen and (min-width:2560px) {

@@ -48,6 +48,12 @@
                     font-size: 16px;
                 }
             }
+        
+            &.error {
+                animation:shake 0.2s ease-in-out;
+                border-color:red!important;
+            }
+
             input[type=submit]{
                 border: 1px solid $primary-color;
                 background-color: $primary-color;
@@ -152,8 +158,13 @@
 
         & a {
             background-color: #EDFFFC;
-            border-radius: 100%;
+            border-radius: 50%;
             padding: 10px;
+            width: 50px;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
 
             img {
                 width: 32px;
@@ -214,6 +225,12 @@
                 font-weight: map-get($font-weights, regular);
             }
         }
+
+        & .error {
+            animation:shake 0.2s ease-in-out;
+            border-color:red!important;
+        }
+        
         input[type=submit]{
             border: 1px solid $primary-color;
             background-color: $primary-color;

@@ -6,10 +6,14 @@ questionsButtons.forEach( questionButton=> {
         const li = questionButton.parentElement
 
         let activeLi = li.parentElement.parentElement.querySelector('.active')
-        
-        li.classList.toggle('active')
 
-        activeLi.classList.remove('active')
+        if (activeLi) activeLi.classList.remove('active')
+
+        if (activeLi == li) {
+            activeLi.classList.remove('active')
+        } else {
+            li.classList.add('active')
+        }
             
     })
 });

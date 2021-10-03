@@ -1,10 +1,3 @@
-* {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
 @media screen and (min-width: 2560px) {
   .body-background {
     background: 50% 9% url(../../../images/backgrounds/Bg.svg) no-repeat, 0% 53% url(../../../images/backgrounds/Bg-2.svg) no-repeat !important;

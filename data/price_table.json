@@ -19,7 +19,8 @@
           "5+ Operators",
           "Notifications",
           "Landing Pages"
-        ]
+        ],
+        "exclusive": "true"
     },
     {
         "id": 3,

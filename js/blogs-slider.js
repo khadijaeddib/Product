@@ -6,67 +6,73 @@ let thirdSlideButton = document.querySelector('#third-slide-button')
 
 let ul = firstSlideButton.parentElement.parentElement
 
-let scrollX = 1135
+const slideVisible = 3
+const slideNotVisible = 6
 
+let scrollX = (slideItems.scrollWidth / slideVisible) + slideNotVisible
 
 const maxScrollLeft = slideItems.scrollWidth - slideItems.clientWidth
 
-function slide() {
-    if (slideItems.scrollLeft > (maxScrollLeft - 1)) {
-        ul.querySelector('.active-button').classList.remove('active-button')
-        firstSlideButton.classList.add('active-button')
+slideItems.style.scrollBehavior='smooth'
 
-        slideItems.scrollLeft = 0
-
-    }else {
+function slider () {
+    if (slideItems.scrollLeft <= scrollX - 1 ) {
         ul.querySelector('.active-button').classList.remove('active-button')
         secondSlideButton.classList.add('active-button')
-
-        slideItems.scrollLeft +=scrollX
-        slideItems.style.scrollBehavior='smooth'
-
-        // if (slideItems.scrollLeft = scrollX) {
-        //     ul.querySelector('.active-button').classList.remove('active-button')
-        //     secondSlideButton.classList.add('active-button')
-        // }
-
-        if (slideItems.scrollLeft >= scrollX) {
-            ul.querySelector('.active-button').classList.remove('active-button')
-            thirdSlideButton.classList.add('active-button')
-        }
+    
+    }else {
+        ul.querySelector('.active-button').classList.remove('active-button')
+        thirdSlideButton.classList.add('active-button')
     }
+
+    if (slideItems.scrollLeft >= (maxScrollLeft - 1) ) {
+        slideItems.scrollLeft = 0
+
+        ul.querySelector('.active-button').classList.remove('active-button')
+        firstSlideButton.classList.add('active-button')
+    }
+
+    slideItems.scrollLeft += scrollX
 }
 
-let timer = setInterval(slide,5000)
+const runTimer = () => {
+    timer = setInterval(slider, 5000)
+}
+
+runTimer()
 
 firstSlideButton.addEventListener('click', () => {
+    clearTimeout(timer)
+    runTimer()
     ul.querySelector('.active-button').classList.remove('active-button')
     firstSlideButton.classList.add('active-button')
 
     slideItems.scrollLeft =0
     slideItems.style.scrollBehavior='smooth'
+    
 })
 
 secondSlideButton.addEventListener('click', () => {
+    clearTimeout(timer)
+    runTimer()
     ul.querySelector('.active-button').classList.remove('active-button')
     secondSlideButton.classList.add('active-button')
 
     slideItems.scrollLeft = scrollX
     slideItems.style.scrollBehavior='smooth'
+  
 })
+
+
 thirdSlideButton.addEventListener('click', () => {
+    clearTimeout(timer)
+    runTimer()
     ul.querySelector('.active-button').classList.remove('active-button')
     thirdSlideButton.classList.add('active-button')
 
     slideItems.scrollLeft =scrollX * 2
     slideItems.style.scrollBehavior='smooth'
+    
 })
 
 
-if (window.matchMedia('(min-width: 2560px)').matches) {
-    scrollX = 1925
-}
-
-if (window.matchMedia('(max-width: 1024px)').matches) {
-    scrollX = 953
-}

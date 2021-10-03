@@ -1,10 +1,3 @@
-* {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
 .price-table h2 {
   font-size: 34px;
   text-align: center;
@@ -96,15 +89,15 @@
           transform: scale(1.1);
 }
 
-.price-table .standard {
+.price-table .exclusive {
   background-color: #02897A;
 }
 
-.price-table .standard h2, .price-table .standard h4, .price-table .standard h6, .price-table .standard p {
+.price-table .exclusive h2, .price-table .exclusive h4, .price-table .exclusive h6, .price-table .exclusive p {
   color: #fff;
 }
 
-.price-table .standard .button {
+.price-table .exclusive .button {
   background-color: #fff;
   color: #02897A;
 }
@@ -129,4 +122,4 @@
             justify-content: center !important;
   }
 }
-/*# sourceMappingURL=price_table.css.map */
+/*# sourceMappingURL=price-table.css.map */

@@ -7,14 +7,15 @@
     <link rel="icon" type="image/x-icon" href="images/logo/favicon.ico" sizes="32x32">
 
     <link rel="stylesheet" href="./style/css/main.css">
-    <link rel="stylesheet" href="./style/css/header&footer.css">
+    <link rel="stylesheet" href="./style/css/header-footer.css">
     <link rel="stylesheet" href="./style/css/resources/style.css">
     <link rel="stylesheet" href="./style/css/resources/responsive.css">
 
+    <script type="text/javascript" src="js/nav-menu.js" defer></script>
     <script type="text/javascript" src="js/animations.js" defer></script>
-    <script type="text/javascript" src="js/email_form_validation.js" defer></script>
-    <script type="text/javascript" src="js/message_form_validation.js" defer></script>
-    <script type="text/javascript" src="js/nav_menu.js" defer></script>
+    <script type="text/javascript" src="js/resource-email-form-validation.js" defer></script>
+    <script type="text/javascript" src="js/message-form-validation.js" defer></script>
+    <script type="text/javascript" src="js/footer-email-form-validation.js" defer></script>
 
     <title>Product-resources</title>
 </head>
@@ -49,7 +50,7 @@
                 <h2>Great Business made with Product.</h2>
                 <p>Build better customer relationships easily messaging that provides 
                     a more personal experience for you and your customers.</p>
-                <form onsubmit="return false;" name="emailForm" class="resources-email-form">
+                <form name="emailForm" class="resources-email-form">
                     <input type="email" name="emailInput" placeholder="Enter your email address" required>
                     <input type="submit" class="join-button" value="Join Now"></input>
                 </form>
@@ -138,7 +139,7 @@
 
             <section class="resource-contact-message animation-to-bottom">
                 <h2>Send a message</h2>
-                <form onsubmit="return false;" name="contactForm" class="resource-contact-message-form">
+                <form name="contactForm" class="resource-contact-message-form">
                     <input type="text" name="nameInput" placeholder="Your Name" required>
                     <input type="email" name="emailInput" placeholder="Your Email" required>
                     <textarea type="text" name="messageInput" placeholder="Your Message" required></textarea>
