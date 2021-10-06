@@ -1,0 +1,395 @@
+.resource-hero {
+  padding-top: 76px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 70px;
+}
+
+.resource-hero-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start !important;
+      -ms-flex-align: start !important;
+          align-items: flex-start !important;
+  gap: 24px;
+}
+
+.resource-hero-content h2 {
+  font-weight: 600;
+  margin-bottom: 0;
+}
+
+.resource-hero-content p {
+  font-size: 20px;
+  margin-bottom: 0;
+}
+
+.resource-hero-content-joins {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.resource-hero-content-joins span {
+  color: #02897A;
+}
+
+.resource-hero-content .resources-email-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  width: 85%;
+  border: 1px solid #EAEAEA;
+  border-radius: 100px;
+}
+
+.resource-hero-content .resources-email-form input[type=email] {
+  width: 100%;
+  border-radius: 100px;
+  padding: 25px;
+  border: none;
+}
+
+.resource-hero-content .resources-email-form input[type=email]::-webkit-input-placeholder {
+  color: #22343D;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.resource-hero-content .resources-email-form input[type=email]:-ms-input-placeholder {
+  color: #22343D;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.resource-hero-content .resources-email-form input[type=email]::-ms-input-placeholder {
+  color: #22343D;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.resource-hero-content .resources-email-form input[type=email]::placeholder {
+  color: #22343D;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.resource-hero-content .resources-email-form.error {
+  -webkit-animation: shake 0.2s ease-in-out;
+          animation: shake 0.2s ease-in-out;
+  border-color: red !important;
+}
+
+.resource-hero-content .resources-email-form input[type=submit] {
+  border: 1px solid #02897A;
+  background-color: #02897A;
+  color: #fff;
+  border-radius: 100px;
+  padding: 20px 24px;
+  font-weight: 600;
+  font-size: 16px;
+  margin: 8px;
+  cursor: pointer;
+}
+
+.resource-hero-content .resources-email-form input[type=submit]:hover {
+  background-color: #046e62;
+  font-weight: 700;
+}
+
+.resource-blogs-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 32px;
+}
+
+.resource-blogs-section h2, .resource-blogs-section p {
+  margin: 0;
+}
+
+.resource-blogs-section-items {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (2fr)[3];
+      grid-template-columns: repeat(3, 2fr);
+  gap: 30px;
+}
+
+.resource-blogs-section-item {
+  border: 1px solid #DEDEDE;
+  border-radius: 9px;
+}
+
+.resource-blogs-section-item:hover {
+  -webkit-transform: translate3d(0, -15px, 0);
+          transform: translate3d(0, -15px, 0);
+}
+
+.resource-blogs-section-item img {
+  width: 100%;
+}
+
+.resource-blogs-section-item-content {
+  padding: 24px;
+}
+
+.resource-blogs-section-item-content .p-bold {
+  font-weight: 700;
+}
+
+.resource-blogs-section-item-content h4:hover {
+  color: #02897A;
+}
+
+.resource-blogs-section button {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  color: #22343D;
+  font-weight: 500;
+  font-size: 18px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 8px;
+}
+
+.resource-blogs-section button:hover {
+  color: #02897A;
+}
+
+.resource-contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 50px;
+}
+
+.resource-contact-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.resource-contact-content h2 {
+  margin-bottom: 17px;
+  font-size: 34px;
+}
+
+.resource-contact-content p {
+  font-weight: 500;
+  margin: 0;
+}
+
+.resource-contact-social-media {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 16px;
+}
+
+.resource-contact-social-media a {
+  background-color: #EDFFFC;
+  border-radius: 50%;
+  padding: 10px;
+  width: 50px;
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.resource-contact-social-media a img {
+  width: 32px;
+  height: 32px;
+}
+
+.resource-contact-social-media a:hover {
+  background-color: #50b9ad;
+}
+
+.resource-contact-message {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 1px solid #E8E8E8;
+  border-radius: 20px;
+  padding: 50px;
+  width: 70%;
+}
+
+.resource-contact-message h2 {
+  font-size: 24px;
+}
+
+.resource-contact-message-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 45px;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  width: 100%;
+}
+
+.resource-contact-message-form input[type=text],
+.resource-contact-message-form input[type=email] {
+  width: 100%;
+  border: 1px solid #F5F5F5;
+  border-radius: 39px;
+  background-color: #E8E8E8;
+  padding: 20px;
+}
+
+.resource-contact-message-form input[type=text]::-webkit-input-placeholder,
+.resource-contact-message-form input[type=email]::-webkit-input-placeholder {
+  color: #22343D;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.resource-contact-message-form input[type=text]:-ms-input-placeholder,
+.resource-contact-message-form input[type=email]:-ms-input-placeholder {
+  color: #22343D;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.resource-contact-message-form input[type=text]::-ms-input-placeholder,
+.resource-contact-message-form input[type=email]::-ms-input-placeholder {
+  color: #22343D;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.resource-contact-message-form input[type=text]::placeholder,
+.resource-contact-message-form input[type=email]::placeholder {
+  color: #22343D;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.resource-contact-message-form textarea {
+  width: 100%;
+  border: 1px solid #F5F5F5;
+  background-color: #E8E8E8;
+  padding: 20px;
+  height: 190px;
+}
+
+.resource-contact-message-form textarea::-webkit-input-placeholder {
+  color: #22343D;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.resource-contact-message-form textarea:-ms-input-placeholder {
+  color: #22343D;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.resource-contact-message-form textarea::-ms-input-placeholder {
+  color: #22343D;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.resource-contact-message-form textarea::placeholder {
+  color: #22343D;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.resource-contact-message-form .error {
+  -webkit-animation: shake 0.2s ease-in-out;
+          animation: shake 0.2s ease-in-out;
+  border-color: red !important;
+}
+
+.resource-contact-message-form input[type=submit] {
+  border: 1px solid #02897A;
+  background-color: #02897A;
+  color: #fff;
+  border-radius: 35px;
+  padding: 18px 54px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.resource-contact-message-form input[type=submit]:hover {
+  background-color: #046e62;
+  font-weight: 700;
+}
+/*# sourceMappingURL=style.css.map */

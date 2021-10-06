@@ -52,6 +52,10 @@
     transition-delay: .9s;
 }
 
+.infinite {
+    animation: infinite-animation 1.5s linear infinite;
+}
+
 @keyframes shake {
     0% { margin-left: 0rem; }
     25% { margin-left: 0.5rem; }
@@ -90,5 +94,12 @@
     0% {transform: translateY(0rem)}
     25% {transform: translateY(-1rem) }
     75% {transform: translateY(2rem)}
+    100% {transform: translateY(0rem)}
+}
+
+@keyframes infinite-animation {
+    0% {transform: translateY(0rem)}
+    25% {transform: translateY(-0.4rem)}
+    75% {transform: translateY(0.4rem)}
     100% {transform: translateY(0rem)}
 }
