@@ -101,6 +101,10 @@
   .hero-section-content h2, .hero-section-content p {
     text-align: center;
   }
+  .modal-content iframe {
+    width: 90%;
+    height: 60%;
+  }
   .main-presentation h3 {
     width: 85%;
   }
