@@ -351,6 +351,86 @@ body {
   scroll-behavior: smooth;
 }
 
+body.dark {
+  -webkit-transition: all .1s;
+  transition: all .1s;
+  background-color: #1F2E35 !important;
+}
+
+body.dark .main-header {
+  background-color: #1F2E35 !important;
+}
+
+body.dark .main-header-nav-btn {
+  background: #fff;
+}
+
+body.dark .main-header-nav-btn::before {
+  background: #fff;
+}
+
+body.dark .main-header-nav-btn::after {
+  background: #fff;
+}
+
+body.dark h1, body.dark h2, body.dark h3, body.dark h4, body.dark h5, body.dark h6, body.dark p, body.dark a {
+  color: #fff;
+}
+
+body.dark.body-background {
+  background: 50% 14% url(../../images/backgrounds/dark-background-bottom.svg) no-repeat, #1F2E35 50% 51% url(../../images/backgrounds/dark-background-top.svg) no-repeat !important;
+  background-size: contain !important;
+}
+
+body.dark .signin-btn {
+  color: #fff;
+}
+
+body.dark .blogs-section-item, body.dark .resource-blogs-section-item {
+  border: 0px transparent;
+}
+
+body.dark .product-features {
+  background-color: #22343D;
+}
+
+body.dark .product-join, body.dark .pricing-interested {
+  background: #22343D;
+}
+
+body.dark .pricing-questions button {
+  color: #fff;
+}
+
+body.dark .resources-email-form input[type=email]::-webkit-input-placeholder {
+  color: #fff;
+}
+
+body.dark .resources-email-form input[type=email]:-ms-input-placeholder {
+  color: #fff;
+}
+
+body.dark .resources-email-form input[type=email]::-ms-input-placeholder {
+  color: #fff;
+}
+
+body.dark .resources-email-form input[type=email]::placeholder {
+  color: #fff;
+}
+
+body.dark .resource-blogs-section button {
+  color: #fff;
+}
+
+body.dark .resource-blogs-section button::after {
+  content: url(../../images/icons/circle_right.svg);
+}
+
+body.dark .resource-contact-message {
+  background-color: #22343D;
+  border: 1px solid #464646;
+}
+
 .body-background {
   background: 50% 13% url(../../images/backgrounds/Bg.svg) no-repeat, 0% 52% url(../../images/backgrounds/Bg-2.svg) no-repeat;
   background-size: contain;
@@ -450,8 +530,8 @@ a {
 
 .button {
   padding: 10px 25px;
+  border: none;
   border-radius: 5px;
-  border: 1px solid #BCD0E5;
   background-color: #02897A;
   color: #fff;
   font-weight: 600;
@@ -460,13 +540,9 @@ a {
 }
 
 .button.signin-btn {
-  background-color: #fff;
+  border: 1px solid #BCD0E5;
+  background: none;
   color: #173A56;
-}
-
-.button.signin-btn:hover {
-  background-color: #F5F5F5;
-  font-weight: 700;
 }
 
 .button:hover {
@@ -480,10 +556,21 @@ a {
   cursor: pointer;
 }
 
+@media screen and (min-width: 2560px) {
+  body.dark.body-background {
+    background: 50% 9% url(../../images/backgrounds/dark-background-bottom.svg) no-repeat, #1F2E35 50% 52% url(../../images/backgrounds/dark-background-top.svg) no-repeat !important;
+    background-size: contain !important;
+  }
+}
+
 @media screen and (max-width: 1024px) {
   body {
     width: 100%;
     overflow: auto;
+  }
+  body.dark.body-background {
+    background: 50% 13% url(../../images/backgrounds/dark-background-bottom.svg) no-repeat, #1F2E35 50% 48% url(../../images/backgrounds/dark-background-top.svg) no-repeat !important;
+    background-size: contain !important;
   }
   .container {
     width: 90% !important;
@@ -495,8 +582,19 @@ a {
     width: 100%;
     overflow-x: hidden;
   }
+  body.dark.body-background {
+    background: 50% 13.5% url(../../images/backgrounds/dark-background-bottom.svg) no-repeat, #1F2E35 50% 36% url(../../images/backgrounds/dark-background-top.svg) no-repeat !important;
+    background-size: contain !important;
+  }
   .container {
     gap: 100px !important;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  body.dark.body-background {
+    background: 50% 14% url(../../images/backgrounds/dark-background-bottom.svg) no-repeat, #1F2E35 50% 35.5% url(../../images/backgrounds/dark-background-top.svg) no-repeat !important;
+    background-size: contain !important;
   }
 }
 /*# sourceMappingURL=main.css.map */

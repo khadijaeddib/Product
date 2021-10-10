@@ -22,9 +22,9 @@
 }
 
 .price-table-column {
-  border: 1px solid #FFFFFF;
-  -webkit-box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.1);
-          box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  -webkit-box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.1);
+          box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.1);
   border-radius: 8px;
   padding: 32px 73px;
   display: -webkit-box;
@@ -39,31 +39,33 @@
           align-items: center;
 }
 
-.price-table-column h4 {
+.price-table-column h6 {
   font-size: 24px;
+  color: #22343D !important;
 }
 
 .price-table-column p {
   text-align: left;
   margin-bottom: 16px;
+  color: #22343D !important;
 }
 
 .price-table-column h2 {
   font-size: 76px;
   text-align: left;
-  color: #02897A;
+  color: #02897A !important;
   margin-bottom: 0px;
 }
 
 .price-table-column h4 {
-  color: #02897A;
+  color: #02897A !important;
   font-weight: 700;
   font-size: 24px;
   margin-bottom: 4px;
 }
 
 .price-table-column h5 {
-  color: #AFAFAF;
+  color: #AFAFAF !important;
   font-weight: 400;
 }
 
@@ -94,7 +96,7 @@
 }
 
 .price-table .exclusive h2, .price-table .exclusive h4, .price-table .exclusive h6, .price-table .exclusive p {
-  color: #fff;
+  color: #fff !important;
 }
 
 .price-table .exclusive .button {

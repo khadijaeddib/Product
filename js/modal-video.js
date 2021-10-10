@@ -7,14 +7,14 @@ const closeButton = document.querySelector('.close-btn')
 
 function showModal () {
     video.src="https://www.youtube.com/embed/N5wpD9Ov_To"
-    modal.style.visibility='visible'
+    modal.classList.add('visible') 
     video.style.animation = "showModalAnimation .6s"
 }
 
 function hideModal () {
     video.src = ''
     video.style.animation = "hideModalAnimation .4s ease-out"
-    setTimeout(function() {modal.style.visibility='hidden'}, 400)
+    setTimeout(function() {modal.classList.remove('visible')}, 400)
 }
 
 function windowClick(event) {
@@ -31,6 +31,7 @@ function escapeClick(e) {
         hideModal ()
     }
 }
+
 
 playButton.addEventListener('click',showModal)
 closeButton.addEventListener('click',hideModal)

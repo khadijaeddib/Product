@@ -41,6 +41,7 @@
                 border-radius: 100px;
                 padding: 25px;
                 border: none;
+                background: none;
 
                 &::placeholder {
                     color:#22343D;
@@ -94,24 +95,38 @@
         border: 1px solid #DEDEDE;
         border-radius: 9px;
 
+        & a {
+            display: flex;
+            flex-direction: column;
+        }
+
         &:hover  {
             transform: translate3d(0, -15px, 0);
         }
 
         img {
             width: 100%;
+            border-top-left-radius: 9px;
+            border-top-right-radius: 9px;
         }
 
         &-content {
+            background-color: $white;
+            border-bottom-right-radius: 8px;
+            border-bottom-left-radius: 8px;
             padding: 24px;
+
             & .p-bold {
                 font-weight: map-get($font-weights, bold);
             }
+           
             & h4:hover{
                 color: $primary-color;
             }
         }
-        
+        & h4, p {
+            color: $dark-color!important;
+        }
     }
 
     button {
@@ -123,10 +138,14 @@
         font-size: 18px;
         display: flex;
         align-items: center;
+        justify-content: center;
         gap: 8px;
 
+        &::after {
+            content: url(../../../images/icons/arrow.svg);
+        }
         &:hover {
-            color: $primary-color;
+            color: $primary-color!important;
         }
     }
 }
@@ -187,7 +206,7 @@
     padding: 50px;
     width: 70%;
 
-    h2 {
+    & h2 {
         font-size: 24px;
     }
 

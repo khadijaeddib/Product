@@ -24,8 +24,12 @@
   gap: 30px;
 }
 
+.hero-section-btns button:nth-child(1) {
+  border: none;
+}
+
 .hero-section-btns .play-btn {
-  background-color: #fff;
+  background: none;
   color: #02897A;
   text-decoration: underline;
   border: none;
@@ -100,6 +104,10 @@
   background: #fff;
   -webkit-transform: rotate(-45deg) translate(3px, -7px);
           transform: rotate(-45deg) translate(3px, -7px);
+}
+
+.visible {
+  visibility: visible;
 }
 
 .main-presentation {
@@ -215,6 +223,7 @@
   padding: 15px 20px;
   -webkit-box-shadow: 0 1px 4px 3px rgba(0, 0, 0, 0.1);
           box-shadow: 0 1px 4px 3px rgba(0, 0, 0, 0.1);
+  color: #22343D;
 }
 
 .contact-expert-section .expert-roles .expert-role p::after {
@@ -243,6 +252,7 @@
 
 .contact-expert-section .center {
   margin-top: 48px;
+  border: none;
 }
 
 .blogs-section h2 {
@@ -273,9 +283,18 @@
 
 .blogs-section-items .blogs-section-item {
   border: 1px solid #DEDEDE;
-  border-radius: 9px;
+  border-radius: 8px;
   min-width: 31%;
-  position: relative;
+}
+
+.blogs-section-items .blogs-section-item a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .blogs-section-items .blogs-section-item:hover {
@@ -285,14 +304,23 @@
 
 .blogs-section-items .blogs-section-item img {
   width: 100%;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
 }
 
 .blogs-section-items .blogs-section-item-content {
+  background-color: #fff;
+  border-bottom-right-radius: 8px;
+  border-bottom-left-radius: 8px;
   padding: 24px;
 }
 
 .blogs-section-items .blogs-section-item-content .p-bold {
   font-weight: 700;
+}
+
+.blogs-section-items .blogs-section-item h4, .blogs-section-items .blogs-section-item p {
+  color: #22343D;
 }
 
 .blogs-section-items .blogs-section-item h4:hover {
@@ -311,7 +339,7 @@
 }
 
 .blogs-section .blogs-slides button {
-  border: 1px solid #EFEFEF;
+  border: none;
   display: inline-block;
   width: 16px;
   height: 16px;
@@ -344,9 +372,9 @@
 }
 
 .review-section-item {
-  border: 1px solid #FFFFFF;
-  -webkit-box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.1);
-          box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  border: 1px solid #DEDEDE;
+  border-radius: 5px;
   padding: 26px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -363,7 +391,7 @@
 
 .review-section-item p {
   font-weight: 400;
-  color: #737373;
+  color: #737373 !important;
   text-align: justify;
 }
 
@@ -388,7 +416,7 @@
 
 .review-section-item .reviewer-information .reviewer-name {
   font-weight: 600;
-  color: #02897A;
+  color: #02897A !important;
 }
 
 .review-section-item .reviewer-information .reviewer-job {

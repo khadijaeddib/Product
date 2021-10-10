@@ -112,7 +112,7 @@
             }
 
             & button {
-                background-color: $white;
+                background: none;
                 border: none;
                 color: $dark-color;
                 font-weight: map-get($font-weights, medium);

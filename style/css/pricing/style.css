@@ -175,7 +175,7 @@
 }
 
 .pricing-questions-onglets-item button {
-  background-color: #fff;
+  background: none;
   border: none;
   color: #22343D;
   font-weight: 500;

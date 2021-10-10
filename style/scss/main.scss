@@ -11,6 +11,59 @@
 body {
     font-family: 'Poppins',sans-serif;
     scroll-behavior: smooth;
+
+    &.dark{
+        transition: all .1s;
+        background-color: $dark-background-color!important;
+        .main-header {
+            background-color: $dark-background-color!important;
+        }
+        .main-header-nav-btn {
+            background: $white;
+            &::before {
+                background: $white;
+            }
+            &::after {
+                background: $white;
+            }
+        }
+        & h1,h2,h3,h4,h5,h6,p,a {
+           color: $white;
+        }
+        &.body-background {
+            background: 50% 14% url(../../images/backgrounds/dark-background-bottom.svg)no-repeat,
+            $dark-background-color 50% 51% url(../../images/backgrounds/dark-background-top.svg)no-repeat!important;
+            background-size: contain!important; 
+        }
+        .signin-btn {
+            color: $white;
+        }
+        .blogs-section-item, .resource-blogs-section-item {
+            border: 0px transparent;
+        }
+        .product-features {
+            background-color: $dark-color;
+        }
+        .product-join,.pricing-interested {
+            background: $dark-color;
+        }
+        .pricing-questions button{
+            color: $white;
+        }
+        .resources-email-form input[type=email]::placeholder {
+            color: $white;
+        }
+        .resource-blogs-section button {
+            color: $white;
+            &::after {
+                content: url(../../images/icons/circle_right.svg);
+            }
+        }
+        .resource-contact-message {
+            background-color: $dark-color;
+            border: 1px solid #464646;
+        }
+    }
 }
 .body-background {
     background: 50% 13% url(../../images/backgrounds/Bg.svg)no-repeat,
@@ -89,8 +142,8 @@ a {
 }
 .button {
     padding: 10px 25px;
+    border: none;
     border-radius: 5px;
-    border: 1px solid $light-color;
     background-color: $primary-color;
     color: $white;
     font-weight: map-get($font-weights, semi-bold);
@@ -98,13 +151,9 @@ a {
     cursor: pointer;
 
     &.signin-btn {
-        background-color: $white;
+        border: 1px solid $light-color;
+        background: none;
         color: #173A56;
-
-        &:hover {
-            background-color: $hover-color;
-            font-weight: map-get($font-weights, bold);
-        }
     }
 
     &:hover {
@@ -118,12 +167,32 @@ a {
     cursor: pointer;
 }
 
+@include media-xl {
+    body {
+        &.dark {
+            &.body-background {
+                background: 50% 9% url(../../images/backgrounds/dark-background-bottom.svg)no-repeat,
+                $dark-background-color 50% 52% url(../../images/backgrounds/dark-background-top.svg)no-repeat!important;
+                background-size: contain!important;
+            }
+        }
+    }
+}
 
 @include media-md {
     body {
         width: 100%;
         overflow: auto;
     }
+    body {
+    &.dark {
+        &.body-background {
+            background: 50% 13% url(../../images/backgrounds/dark-background-bottom.svg)no-repeat,
+            $dark-background-color 50% 48% url(../../images/backgrounds/dark-background-top.svg)no-repeat!important;
+            background-size: contain!important;
+        }
+    }
+}
     .container {
         width: 90%!important;
     }
@@ -134,8 +203,29 @@ a {
         width: 100%;
         overflow-x: hidden;
     }
+    body {
+        &.dark {
+            &.body-background {
+                background: 50% 13.5% url(../../images/backgrounds/dark-background-bottom.svg)no-repeat,
+                $dark-background-color 50% 36% url(../../images/backgrounds/dark-background-top.svg)no-repeat!important;
+                background-size: contain!important;
+            }
+        }
+    }
     .container {
         gap: 100px!important;
+    }
+}
+
+@include media-mobile-md {
+    body {
+        &.dark {
+            &.body-background {
+                background: 50% 14% url(../../images/backgrounds/dark-background-bottom.svg)no-repeat,
+                $dark-background-color 50% 35.5% url(../../images/backgrounds/dark-background-top.svg)no-repeat!important;
+                background-size: contain!important;
+            }
+        }
     }
 }
 
