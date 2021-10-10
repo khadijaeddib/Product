@@ -13,6 +13,5 @@ function toggleTheme() {
 if (localStorage.getItem("theme") === "dark") {
     document.body.classList.add('dark')
 }
-window.matchMedia("(prefers-color-scheme: dark)").matches
 
 switcher.addEventListener('click', toggleTheme);
